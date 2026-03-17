@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Garoms-tech Platform Workspace</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">🚀 Garoms-<span>tech</span></a>
+    <nav id="menu" class="menu">
+      <a href="index.html">Home</a>
+      <a class="active" href="platform.html">Platform</a>
+      <a href="auth.html">Login</a>
+      <a href="pricing.html">Subscriptions</a>
+      <a href="market-intelligence.html">Market AI</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="actions">
+      <select id="langSelect" class="select">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="ht">HT</option>
+      </select>
+      <button id="themeToggle" class="icon-btn">🌙</button>
+      <button id="menuBtn" class="icon-btn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid-2 reveal">
+      <article class="card">
+        <h1>Business account setup</h1>
+        <p>Complete your business profile once, then run debt, team, marketing, and product modules from one dashboard.</p>
+        <form id="businessProfileForm" class="form-grid">
+          <label>Business name<input name="businessName" required/></label>
+          <label>Business type<input name="businessType" placeholder="Retail, Pharmacy, Service..."/></label>
+          <label>Country<input name="country" required/></label>
+          <label>City<input name="city" required/></label>
+          <label>Local area<input name="local"/></label>
+          <label>Main services<input name="services" placeholder="Repair, Distribution, Logistics..."/></label>
+          <label>Official email<input type="email" name="email"/></label>
+          <label>Phone / WhatsApp<input name="phone"/></label>
+          <label>Theme preference<select name="themePref"><option>Professional Blue</option><option>Dark Navy</option><option>Fresh Green</option></select></label>
+          <button class="btn primary" type="submit">Save profile</button>
+        </form>
+        <p class="notice">Client-safe profile is generated automatically. Your private merchant data stays hidden from clients.</p>
+      </article>
+
+      <article class="card">
+        <h2>Merchant profile preview</h2>
+        <div id="profilePreview" class="card mini">No profile yet.</div>
+        <label>Client-safe profile link<input id="customerLink" readonly/></label>
+        <label>Referral link<input id="referralOutput" readonly/></label>
+        <form id="inviteForm" class="form-grid">
+          <label>Business short code<input name="business" placeholder="GAROMS"/></label>
+          <button class="btn" type="submit">Generate referral code</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="card reveal">
+      <h2>Liv Dèt workspace</h2>
+      <div class="grid-4">
+        <article class="card stat"><h3>Client receivables</h3><p id="totalReceivable">0 HTG</p></article>
+        <article class="card stat"><h3>Business payables</h3><p id="totalPayable">0 HTG</p></article>
+        <article class="card stat"><h3>Active records</h3><p id="activeCount">0</p></article>
+        <article class="card stat"><h3>Plan status</h3><p id="planLimitInfo">Plan limit: 30 active records.</p></article>
+      </div>
+
+      <form id="debtForm" class="form-grid">
+        <label>Client name<input name="clientName" required/></label>
+        <label>Phone<input name="phone"/></label>
+        <label>Item / service<input name="item"/></label>
+        <label>Type<select name="kind"><option value="receivable">Client owes</option><option value="payable">Business owes</option></select></label>
+        <label>Amount (HTG)<input name="amount" type="number" min="1" required/></label>
+        <label>Due date<input name="dueDate" type="date"/></label>
+        <label>Note<textarea name="note"></textarea></label>
+        <label>Plan<select id="planSelect"><option value="free">Free</option><option value="week">Weekly</option><option value="month">Monthly</option><option value="year">Yearly</option></select></label>
+        <button class="btn primary" type="submit">Save record</button>
+      </form>
+      <p id="formNote"></p>
+
+      <div class="toolbar">
+        <input id="searchInput" placeholder="Search records"/>
+        <select id="filterKind"><option value="all">All</option><option value="receivable">Client owes</option><option value="payable">Business owes</option><option value="paid">Paid</option><option value="unpaid">Open</option></select>
+      </div>
+      <p id="autoMessage" class="notice"></p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Client</th><th>Type</th><th>Amount</th><th>Due</th><th>Status</th><th>Action</th></tr></thead>
+          <tbody id="debtTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid-2 reveal">
+      <article class="card">
+        <h2>Products & services catalog</h2>
+        <form id="productForm" class="form-grid">
+          <label>Product name<input name="name" required/></label>
+          <label>Category<input name="category"/></label>
+          <label>Price (HTG)<input type="number" min="1" name="price" required/></label>
+          <label>Stock / capacity<input type="number" min="0" name="stock"/></label>
+          <label>Description<textarea name="description"></textarea></label>
+          <button class="btn primary" type="submit">Add product</button>
+        </form>
+        <ul id="productList" class="item-list"></ul>
+      </article>
+
+      <article class="card">
+        <h2>Team & role management</h2>
+        <form id="teamForm" class="form-grid">
+          <label>Full name<input name="name" required/></label>
+          <label>Role<select name="role"><option>Manager</option><option>Cashier</option><option>Sales</option><option>Support</option></select></label>
+          <label>Phone<input name="phone"/></label>
+          <label>Email<input type="email" name="email"/></label>
+          <button class="btn primary" type="submit">Add team member</button>
+        </form>
+        <ul id="teamList" class="item-list"></ul>
+      </article>
+    </section>
+
+    <section class="grid-2 reveal">
+      <article class="card">
+        <h2>Agenda & task planner</h2>
+        <form id="agendaForm" class="form-grid">
+          <label>Task title<input name="title" required/></label>
+          <label>Date<input type="date" name="date" required/></label>
+          <label>Priority<select name="priority"><option>High</option><option>Medium</option><option>Low</option></select></label>
+          <label>Details<textarea name="details"></textarea></label>
+          <button class="btn primary" type="submit">Schedule task</button>
+        </form>
+        <ul id="agendaList" class="item-list"></ul>
+      </article>
+
+      <article class="card">
+        <h2>Email marketing quick launch</h2>
+        <form id="marketingForm" class="form-grid">
+          <label>Campaign title<input name="title" required/></label>
+          <label>Audience<input name="audience" placeholder="VIP clients / New prospects"/></label>
+          <label>Subject<input name="subject" required/></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <button class="btn primary" type="submit">Generate campaign draft</button>
+        </form>
+        <div id="marketingOutput" class="notice">No campaign draft yet.</div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">Single support contact: contact@garoms-tech.com • +509 3368 8411</footer>
+  <script src="app.js"></script>
+</body>
+</html>
