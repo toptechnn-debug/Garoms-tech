@@ -1,482 +1,103 @@
 <!doctype html>
-<html lang="fr">
+<html lang="ht">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<title>Garoms-tech — Innovation digitale pour entreprises modernes</title>
-	<meta name="description" content="Garoms-tech accompagne les entreprises, entrepreneurs et organisations qui veulent améliorer leur présence digitale. Solutions modernes, efficaces et accessibles." />
-
-	<link rel="canonical" href="https://garoms-tech.netlify.app/" />
-	<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-	<meta name="theme-color" content="#070A12" />
-	<meta name="color-scheme" content="light dark" />
-
-	<meta property="og:site_name" content="Garoms-tech" />
-	<meta property="og:title" content="Garoms-tech — Innovation digitale pour entreprises modernes" />
-	<meta property="og:description" content="Solutions digitales modernes, efficaces et accessibles pour accompagner la croissance des entreprises." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://garoms-tech.netlify.app/" />
-	<meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" />
-	<meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" />
-	<meta property="og:image:alt" content="Équipe tech au travail" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Garoms-tech" />
-	<meta name="twitter:description" content="Innovation digitale pour entreprises modernes." />
-	<meta name="twitter:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" />
-
-	<meta name="mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="apple-mobile-web-app-title" content="Garoms-tech" />
-
-	<meta http-equiv="Content-Security-Policy" content="
-		default-src 'self';
-		base-uri 'self';
-		form-action 'self';
-		frame-ancestors 'none';
-		object-src 'none';
-		script-src 'self';
-		style-src 'self';
-		img-src 'self' https: data:;
-		connect-src 'self';
-		upgrade-insecure-requests;
-	" />
-	<meta name="referrer" content="strict-origin-when-cross-origin" />
-
-	<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Garoms-tech | Vitrin Pro + Zengo-JGM</title>
+  <meta name="description" content="Garoms-tech se yon entreprise dijital ki bay sèvis atravè mond lan. Zengo-JGM se platfòm la ki fèt espesyalman pou mache Ayiti."/>
+  <meta property="og:title" content="Garoms-tech + Zengo-JGM"/>
+  <meta property="og:description" content="Sèvis dijital pwofesyonèl pou mond lan. Platfòm Zengo-JGM espesyal pou Ayiti."/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-	<a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="preloader" id="preloader"><div><h1 data-i18n="welcome_title">Byenveni sou Garoms-tech</h1><p data-i18n="welcome_sub">Vitrin pwofesyonèl. Konfyans. Inovasyon. Kwasans.</p></div></div>
+  <header class="topbar">
+    <a class="logo" href="index.html">🚀 Garoms-<span>tech</span></a>
+    <nav id="menu" class="menu">
+      <a class="active" href="index.html" data-i18n="nav_home">Akèy</a>
+      <a href="services.html" data-i18n="nav_services">Sèvis</a>
+      <a href="platform.html">Zengo-JGM</a>
+      <a href="pricing.html" data-i18n="nav_plans">Plan</a>
+      <a href="auth.html" data-i18n="nav_login">Konekte</a>
+      <a href="contact.html" data-i18n="nav_contact">Kontak</a>
+    </nav>
+    <div class="actions">
+      <select id="langSelect" class="select"><option value="ht">HT</option><option value="fr">FR</option><option value="en">EN</option></select>
+      <button id="themeToggle" class="icon-btn" aria-label="theme">🌙</button>
+      <button id="menuBtn" class="icon-btn" aria-label="menu">☰</button>
+    </div>
+  </header>
 
-	<header class="site-header" data-header>
-		<div class="header-inner">
-			<a class="brand" href="index.html" aria-label="Garoms-tech — Accueil">
-				<img
-					class="brand-logo"
-					src="https://i.ibb.co/k2cLtRhN/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png"
-					alt="Garoms-tech"
-					width="34"
-					height="34"
-					decoding="async"
-					data-img
-				/>
-				<span class="brand-name">Garoms-tech</span>
-			</a>
+  <main>
+    <section class="hero reveal">
+      <article class="card">
+        <p class="kicker" data-i18n="hero_kicker">Vitrin ofisyèl Garoms-tech</p>
+        <h1 data-i18n="hero_title">Nou ede biznis grandi ak solisyon dijital solid</h1>
+        <p data-i18n="hero_text">Garoms-tech bay sèvis dijital nan tout mond lan: estrateji, devlopman, maketing, ak automatisation. Nou bati sistèm serye pou antrepriz kap chèche rezilta.</p>
+        <p>
+          <a class="btn" href="services.html" data-i18n="btn_discover_services">Dekouvri sèvis yo</a>
+          <a class="btn primary" href="platform.html" data-i18n="btn_discover_zengo">Dekouvri Zengo-JGM</a>
+        </p>
+      </article>
+      <article class="card media-card">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=75" alt="Ekip pwofesyonèl nan reyinyon"/>
+      </article>
+    </section>
 
-			<nav class="nav" aria-label="Navigation principale">
-				<button class="burger" type="button" data-burger aria-label="Ouvrir le menu" aria-expanded="false">
-					<span class="burger-lines" aria-hidden="true"></span>
-				</button>
+    <section class="grid-2 reveal">
+      <article class="card">
+        <h2 data-i18n="global_title">Sèvis mondyal</h2>
+        <p data-i18n="global_text">Garoms-tech sèvi kliyan entènasyonal: mak, PME, startup ak òganizasyon ki bezwen solisyon dijital pwofesyonèl.</p>
+      </article>
+      <article class="card">
+        <h2 data-i18n="haiti_title">Platfòm Ayiti 🇭🇹</h2>
+        <p data-i18n="haiti_text">Zengo-JGM fèt espesyalman pou moun kap viv Ayiti: Liv Dèt Digital, analiz mache lokal, maketing, ekip, ak zouti kwasans.</p>
+        <a class="btn primary" href="platform.html" data-i18n="btn_start_now">Kòmanse kounya</a>
+      </article>
+    </section>
 
-				<div class="nav-panel" data-nav-panel>
-					<div class="nav-panel-top">
-						<div class="nav-panel-brand">
-							<img
-								class="nav-panel-logo"
-								src="https://i.ibb.co/k2cLtRhN/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png"
-								alt="Garoms-tech"
-								width="32"
-								height="32"
-								decoding="async"
-								data-img
-							/>
-							<span>Garoms-tech</span>
-						</div>
-						<button class="nav-close" type="button" data-nav-close aria-label="Fermer le menu">×</button>
-					</div>
+    <section class="module-grid reveal">
+      <article class="card module-card">
+        <img src="assets/finance-1.svg" alt="Liv Dèt Digital"/>
+        <h3 data-i18n="mod1_title">Liv Dèt Digital</h3>
+        <p data-i18n="mod1_text">Swiv dèt kliyan yo klèman, jere delè, epi amelyore cashflow biznis ou.</p>
+      </article>
+      <article class="card module-card">
+        <img src="assets/finance-2.svg" alt="Market intelligence"/>
+        <h3 data-i18n="mod2_title">Analiz Mache</h3>
+        <p data-i18n="mod2_text">Konprann sa ki vann nan chak zòn pou pran pi bon desizyon anvan depans.</p>
+      </article>
+      <article class="card module-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=75" alt="Maketing dijital"/>
+        <h3 data-i18n="mod3_title">Maketing & Kominikasyon</h3>
+        <p data-i18n="mod3_text">Kreye kanpay pwofesyonèl pou pwodwi ak sèvis ou yo, avèk mesaj ki konvenk kliyan.</p>
+      </article>
+    </section>
+  </main>
 
-					<ul class="nav-links">
-						<li><a href="index.html" aria-current="page">Accueil</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="design.html">Design</a></li>
-						<li><a href="collaborer.html">Collaborer</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="apropos.html">À propos</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+  <footer class="footer pro-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Garoms-tech</h4>
+        <p data-i18n="foot_about">Entreprise dijital pwofesyonèl ki bay sèvis atravè mond lan.</p>
+      </div>
+      <div>
+        <h4>Zengo-JGM</h4>
+        <p data-i18n="foot_zengo">Platfòm espesyal pou mache Ayiti 🇭🇹 : Liv Dèt, Market, Marketing, Team, AI.</p>
+      </div>
+      <div>
+        <h4 data-i18n="foot_contact">Kontak santral</h4>
+        <p>contact@garoms-tech.com<br/>+509 3368 8411</p>
+      </div>
+      <div>
+        <h4 data-i18n="foot_legal">Legal</h4>
+        <p><a href="mentions-legales.html">Mentions</a> · <a href="conditions-utilisation.html">Terms</a> · <a href="politique-confidentialite.html">Privacy</a></p>
+      </div>
+    </div>
+    <p class="small">© 2026 Garoms-tech — All rights reserved.</p>
+  </footer>
 
-					<div class="nav-cta">
-						<a class="btn btn-whatsapp" data-whatsapp href="#">Parler sur WhatsApp<span class="btn-arrow" aria-hidden="true">→</span></a>
-						<a class="btn btn-email" data-email href="#">Envoyer un email<span class="btn-arrow" aria-hidden="true">→</span></a>
-					</div>
-				</div>
-
-				<div class="nav-backdrop" data-nav-backdrop></div>
-			</nav>
-		</div>
-	</header>
-
-	<main id="main">
-		<section class="hero">
-			<div class="hero-media">
-				<img
-					class="hero-img"
-					src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2200&q=70"
-					alt="Équipe tech travaillant sur ordinateurs"
-					width="2200"
-					height="1200"
-					loading="eager"
-					decoding="async"
-					data-img
-				/>
-				<div class="hero-overlay" aria-hidden="true"></div>
-			</div>
-
-			<div class="container hero-content">
-				<p class="hero-kicker">Innovation digitale</p>
-				<h1 class="hero-title">Garoms-tech</h1>
-				<p class="hero-subtitle">Innovation digitale pour entreprises modernes</p>
-				<p class="hero-text">
-					Garoms-tech accompagne les entreprises, entrepreneurs et organisations qui veulent améliorer leur présence digitale.
-					Nous créons des solutions modernes, efficaces et accessibles pour aider nos clients à développer leurs projets sur internet.
-				</p>
-
-				<div class="hero-actions">
-					<a class="btn btn-primary" href="services.html">Découvrir nos services<span class="btn-arrow" aria-hidden="true">→</span></a>
-					<a class="btn btn-whatsapp" data-whatsapp href="#">Demander un projet<span class="btn-arrow" aria-hidden="true">→</span></a>
-				</div>
-
-				<div class="trust-row" aria-label="Engagements">
-					<div class="trust-item">Sécurité & fiabilité</div>
-					<div class="trust-item">Design moderne</div>
-					<div class="trust-item">Optimisé mobile</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="ticker" aria-label="Message de bienvenue">
-			<div class="ticker-track" role="presentation">
-				<div class="ticker-text">Bienvenue sur le site officiel de Garoms-tech — Bienvenue sur le site officiel de Garoms-tech — Bienvenue sur le site officiel de Garoms-tech —</div>
-				<div class="ticker-text" aria-hidden="true">Bienvenue sur le site officiel de Garoms-tech — Bienvenue sur le site officiel de Garoms-tech — Bienvenue sur le site officiel de Garoms-tech —</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Bienvenue chez Garoms-tech</h2>
-					<p class="section-lead">
-						Garoms-tech est une entreprise digitale fondée le 9 octobre 2025.
-						Notre objectif est d’aider les entreprises et entrepreneurs à utiliser la technologie pour développer leurs activités.
-					</p>
-				</header>
-
-				<div class="grid two">
-					<div class="card card-soft">
-						<p class="body">
-							Nous créons des sites web professionnels, du design moderne et des solutions digitales qui permettent aux entreprises de mieux communiquer avec leurs clients.
-							Notre vision est simple : rendre la technologie accessible et utile pour tous.
-						</p>
-						<div class="card-actions">
-							<a class="btn btn-primary" href="apropos.html">En savoir plus<span class="btn-arrow" aria-hidden="true">→</span></a>
-						</div>
-					</div>
-
-					<article class="card director">
-						<div class="director-media">
-							<img
-								class="director-img"
-								src="https://image2url.com/r2/default/images/1773108157391-38e51975-c8c8-4d4e-9006-b66985273aa9.jpg"
-								alt="Nelson Jean Baptiste"
-								width="320"
-								height="320"
-								loading="lazy"
-								decoding="async"
-								data-img
-							/>
-						</div>
-						<div class="director-body">
-							<p class="tag">Directeur Général</p>
-							<h3 class="director-name">Nelson Guru</h3>
-							<p class="director-title">Directeur Général de Garoms-tech</p>
-							<div class="director-actions">
-								<a class="btn btn-whatsapp" data-whatsapp href="#">WhatsApp<span class="btn-arrow" aria-hidden="true">→</span></a>
-								<a class="btn btn-email" data-email href="#">Email<span class="btn-arrow" aria-hidden="true">→</span></a>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section-alt">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Pourquoi choisir Garoms-tech ?</h2>
-					<p class="section-lead">
-						Aujourd’hui, avoir une présence digitale forte est essentiel pour toute entreprise.
-						Chez Garoms-tech, nous travaillons avec passion pour offrir des solutions simples, modernes et efficaces.
-					</p>
-				</header>
-
-				<div class="grid three">
-					<article class="card feature">
-						<div class="icon" aria-hidden="true">⚡</div>
-						<h3>Solutions efficaces</h3>
-						<p>Nous analysons vos besoins et construisons des solutions orientées résultats.</p>
-					</article>
-					<article class="card feature">
-						<div class="icon" aria-hidden="true">🧩</div>
-						<h3>Approche sur mesure</h3>
-						<p>Chaque projet est adapté à votre activité, à vos objectifs et à votre public.</p>
-					</article>
-					<article class="card feature">
-						<div class="icon" aria-hidden="true">🛡️</div>
-						<h3>Qualité & fiabilité</h3>
-						<p>Design moderne, structure claire, compatibilité mobile et bonnes pratiques.</p>
-					</article>
-				</div>
-
-				<div class="section-actions">
-					<a class="btn btn-primary" href="services.html">En savoir plus<span class="btn-arrow" aria-hidden="true">→</span></a>
-				</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Nos performances</h2>
-					<p class="section-lead">
-						Depuis notre création, nous avons déjà accompagné plusieurs projets digitaux.
-						Notre équipe continue de travailler pour offrir des services modernes et efficaces.
-					</p>
-				</header>
-
-				<div class="grid two">
-					<div class="card card-soft">
-						<div class="stats" aria-label="Chiffres clés">
-							<div class="stat">
-								<div class="stat-value" data-count="15">0+</div>
-								<div class="stat-label">Projets livrés</div>
-							</div>
-							<div class="stat">
-								<div class="stat-value" data-count="13">0+</div>
-								<div class="stat-label">Clients</div>
-							</div>
-							<div class="stat">
-								<div class="stat-value" data-count="3">0+</div>
-								<div class="stat-label">Équipe</div>
-							</div>
-						</div>
-
-						<div class="stats-cta">
-							<a class="btn btn-whatsapp" data-whatsapp href="#">Obtenir un devis<span class="btn-arrow" aria-hidden="true">→</span></a>
-						</div>
-					</div>
-
-					<div class="card media-card">
-						<img
-							class="media-img"
-							src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=70"
-							alt="Tableau de performance"
-							width="1600"
-							height="1067"
-							loading="lazy"
-							decoding="async"
-							data-img
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section-alt">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Collaborer avec Garoms-tech</h2>
-					<p class="section-lead">
-						Nous croyons à la collaboration et à l’innovation collective.
-						Si vous avez des compétences en technologie, design ou communication digitale, vous pouvez rejoindre notre réseau de collaborateurs.
-					</p>
-				</header>
-
-				<div class="grid two">
-					<div class="card card-soft">
-						<ul class="checklist">
-							<li>Environnement flexible et orienté projets</li>
-							<li>Travail à distance selon les besoins</li>
-							<li>Réseau de talents et partenaires</li>
-						</ul>
-						<div class="card-actions">
-							<a class="btn btn-primary" href="collaborer.html">En savoir plus<span class="btn-arrow" aria-hidden="true">→</span></a>
-						</div>
-					</div>
-
-					<div class="card media-card">
-						<img
-							class="media-img"
-							src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=70"
-							alt="Collaboration"
-							width="1600"
-							height="1067"
-							loading="lazy"
-							decoding="async"
-							data-img
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Questions fréquentes</h2>
-					<p class="section-lead">Voici quelques questions que les visiteurs posent souvent à propos de Garoms-tech et de nos services.</p>
-				</header>
-
-				<div class="accordion" data-accordion>
-					<details class="qa">
-						<summary>Quels services propose Garoms-tech ?</summary>
-						<p>Nous proposons la création de sites web, le design digital et des solutions pour améliorer la présence en ligne des entreprises.</p>
-					</details>
-					<details class="qa">
-						<summary>Comment puis-je contacter Garoms-tech ?</summary>
-						<p>Vous pouvez nous contacter via WhatsApp ou par email.</p>
-					</details>
-					<details class="qa">
-						<summary>Garoms-tech travaille-t-il seulement en Haïti ?</summary>
-						<p>Non. Nos services peuvent être utilisés par des clients en Haïti ou à l’international.</p>
-					</details>
-					<details class="qa">
-						<summary>Combien coûte la création d’un site web ?</summary>
-						<p>Le prix dépend du type de projet et des fonctionnalités demandées.</p>
-					</details>
-					<details class="qa">
-						<summary>Puis-je collaborer avec Garoms-tech ?</summary>
-						<p>Oui. Nous sommes ouverts aux collaborations avec des développeurs, designers et partenaires.</p>
-					</details>
-				</div>
-
-				<div class="section-actions">
-					<a class="btn btn-primary" href="faq.html">Voir toutes les questions<span class="btn-arrow" aria-hidden="true">→</span></a>
-				</div>
-			</div>
-		</section>
-
-		<section class="section section-alt">
-			<div class="container">
-				<header class="section-head">
-					<h2 class="section-title">Contact</h2>
-					<p class="section-lead">Contactez-nous via WhatsApp ou envoyez un message. Réponse rapide.</p>
-				</header>
-
-				<div class="grid two">
-					<form class="card form-card" id="contactForm" novalidate>
-						<div class="form-row">
-							<label class="field">
-								<span>Nom</span>
-								<input name="name" type="text" autocomplete="name" required />
-							</label>
-							<label class="field">
-								<span>Email</span>
-								<input name="email" type="email" autocomplete="email" required />
-							</label>
-						</div>
-
-						<label class="field">
-							<span>Message</span>
-							<textarea name="message" rows="6" required></textarea>
-						</label>
-
-						<div class="form-actions">
-							<button class="btn btn-primary" type="submit">Envoyer<span class="btn-arrow" aria-hidden="true">→</span></button>
-							<a class="btn btn-whatsapp" data-whatsapp href="#">WhatsApp<span class="btn-arrow" aria-hidden="true">→</span></a>
-						</div>
-
-						<p class="form-note" id="formNote" aria-live="polite"></p>
-					</form>
-
-					<aside class="card card-soft contact-card">
-						<h3 class="mini-title">Contact direct</h3>
-
-						<div class="contact-line">
-							<span class="contact-label">WhatsApp</span>
-							<span class="contact-value">+509 4177 3549</span>
-						</div>
-
-						<div class="contact-line">
-							<span class="contact-label">Email</span>
-							<a class="contact-value link" href="mailto:contactoptimistetech@gmail.com">contactoptimistetech@gmail.com</a>
-						</div>
-
-						<div class="stack">
-							<a class="btn btn-whatsapp" data-whatsapp href="#">Parler sur WhatsApp<span class="btn-arrow" aria-hidden="true">→</span></a>
-							<a class="btn btn-email" data-email href="#">Envoyer un email<span class="btn-arrow" aria-hidden="true">→</span></a>
-						</div>
-
-						<p class="tiny">Si l’ouverture automatique ne fonctionne pas, copiez l’adresse email ou le numéro WhatsApp.</p>
-					</aside>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="footer">
-		<div class="container footer-grid">
-			<div class="footer-col">
-				<div class="footer-brand">
-					<img
-						class="footer-logo"
-						src="https://i.ibb.co/k2cLtRhN/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png"
-						alt="Garoms-tech"
-						width="44"
-						height="44"
-						loading="lazy"
-						decoding="async"
-						data-img
-					/>
-					<div>
-						<p class="footer-name">Garoms-tech</p>
-						<p class="footer-sub">Innovation digitale pour entreprises modernes</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-col">
-				<h3 class="footer-title">Menu</h3>
-				<ul class="footer-links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="design.html">Design</a></li>
-					<li><a href="collaborer.html">Collaborer</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="apropos.html">À propos</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-col">
-				<h3 class="footer-title">Contact</h3>
-				<p class="footer-text">WhatsApp : +509 4177 3549</p>
-				<p class="footer-text">Email : <a class="link" href="mailto:contactoptimistetech@gmail.com">contactoptimistetech@gmail.com</a></p>
-
-				<div class="footer-cta">
-					<a class="btn btn-whatsapp" data-whatsapp href="#">WhatsApp<span class="btn-arrow" aria-hidden="true">→</span></a>
-					<a class="btn btn-email" data-email href="#">Email<span class="btn-arrow" aria-hidden="true">→</span></a>
-				</div>
-
-				<ul class="legal-links">
-					<li><a href="mentions-legales.html">Mentions légales</a></li>
-					<li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
-					<li><a href="conditions-utilisation.html">Conditions d'utilisation</a></li>
-					<li><a href="cookies.html">Cookies</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="footer-bottom">
-			<div class="container footer-bottom-inner">
-				<p>© 2026 Garoms-tech — Tous droits réservés</p>
-			</div>
-		</div>
-	</footer>
-
-	<script src="app.js" defer></script>
+  <script src="app.js"></script>
 </body>
 </html>
