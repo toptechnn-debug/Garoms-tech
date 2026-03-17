@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Garoms-tech Platform Workspace</title>
+  <title>Zengo-JGM Platform Workspace</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -11,64 +11,71 @@
     <a class="logo" href="index.html">🚀 Garoms-<span>tech</span></a>
     <nav id="menu" class="menu">
       <a href="index.html">Home</a>
-      <a class="active" href="platform.html">Platform</a>
+      <a class="active" href="platform.html">Zengo-JGM</a>
+      <a href="market-intelligence.html">Market</a>
+      <a href="pricing.html">Plans</a>
       <a href="auth.html">Login</a>
-      <a href="pricing.html">Subscriptions</a>
-      <a href="market-intelligence.html">Market AI</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="actions">
-      <select id="langSelect" class="select">
-        <option value="en">EN</option>
-        <option value="fr">FR</option>
-        <option value="ht">HT</option>
-      </select>
+      <select id="langSelect" class="select"><option value="en">EN</option><option value="fr">FR</option><option value="ht">HT</option></select>
       <button id="themeToggle" class="icon-btn">🌙</button>
       <button id="menuBtn" class="icon-btn">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="grid-2 reveal">
+    <section class="card reveal" id="overview">
+      <h1>Zengo-JGM Workspace</h1>
+      <p>A modular workspace: Debt, Market, Marketing, Team, Boutique builder, and AI Agents for business communication.</p>
+      <div class="quick-links">
+        <a class="btn" href="#debt">Liv Dèt</a>
+        <a class="btn" href="#catalog">Products</a>
+        <a class="btn" href="#team">Team</a>
+        <a class="btn" href="#agenda">Agenda</a>
+        <a class="btn" href="#marketing">Marketing</a>
+      </div>
+    </section>
+
+    <section class="grid-2 reveal" id="profile">
       <article class="card">
-        <h1>Business account setup</h1>
-        <p>Complete your business profile once, then run debt, team, marketing, and product modules from one dashboard.</p>
+        <h2>Business profile</h2>
+        <p>Set your business identity once: country, city, services, contact and brand style.</p>
         <form id="businessProfileForm" class="form-grid">
           <label>Business name<input name="businessName" required/></label>
-          <label>Business type<input name="businessType" placeholder="Retail, Pharmacy, Service..."/></label>
+          <label>Business type<input name="businessType"/></label>
           <label>Country<input name="country" required/></label>
           <label>City<input name="city" required/></label>
           <label>Local area<input name="local"/></label>
-          <label>Main services<input name="services" placeholder="Repair, Distribution, Logistics..."/></label>
+          <label>Main services<input name="services"/></label>
           <label>Official email<input type="email" name="email"/></label>
           <label>Phone / WhatsApp<input name="phone"/></label>
           <label>Theme preference<select name="themePref"><option>Professional Blue</option><option>Dark Navy</option><option>Fresh Green</option></select></label>
           <button class="btn primary" type="submit">Save profile</button>
         </form>
-        <p class="notice">Client-safe profile is generated automatically. Your private merchant data stays hidden from clients.</p>
       </article>
-
       <article class="card">
-        <h2>Merchant profile preview</h2>
+        <h2>Client-safe sharing</h2>
+        <p>Your client sees only client-related information, not your private merchant records.</p>
         <div id="profilePreview" class="card mini">No profile yet.</div>
-        <label>Client-safe profile link<input id="customerLink" readonly/></label>
+        <label>Client profile link<input id="customerLink" readonly/></label>
         <label>Referral link<input id="referralOutput" readonly/></label>
         <form id="inviteForm" class="form-grid">
-          <label>Business short code<input name="business" placeholder="GAROMS"/></label>
+          <label>Business short code<input name="business"/></label>
           <button class="btn" type="submit">Generate referral code</button>
         </form>
       </article>
     </section>
 
-    <section class="card reveal">
-      <h2>Liv Dèt workspace</h2>
+    <section class="card reveal" id="debt">
+      <h2>📒 Liv Dèt Digital</h2>
+      <p>Why it helps: clear debt tracking, payment status, reminders and better cash-flow control.</p>
       <div class="grid-4">
         <article class="card stat"><h3>Client receivables</h3><p id="totalReceivable">0 HTG</p></article>
         <article class="card stat"><h3>Business payables</h3><p id="totalPayable">0 HTG</p></article>
         <article class="card stat"><h3>Active records</h3><p id="activeCount">0</p></article>
         <article class="card stat"><h3>Plan status</h3><p id="planLimitInfo">Plan limit: 30 active records.</p></article>
       </div>
-
       <form id="debtForm" class="form-grid">
         <label>Client name<input name="clientName" required/></label>
         <label>Phone<input name="phone"/></label>
@@ -81,23 +88,19 @@
         <button class="btn primary" type="submit">Save record</button>
       </form>
       <p id="formNote"></p>
-
       <div class="toolbar">
         <input id="searchInput" placeholder="Search records"/>
         <select id="filterKind"><option value="all">All</option><option value="receivable">Client owes</option><option value="payable">Business owes</option><option value="paid">Paid</option><option value="unpaid">Open</option></select>
       </div>
       <p id="autoMessage" class="notice"></p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Client</th><th>Type</th><th>Amount</th><th>Due</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody id="debtTable"></tbody>
-        </table>
-      </div>
+      <div class="table-wrap"><table><thead><tr><th>Client</th><th>Type</th><th>Amount</th><th>Due</th><th>Status</th><th>Action</th></tr></thead><tbody id="debtTable"></tbody></table></div>
+      <p><a class="btn primary" href="pricing.html">Kòmanse kounya</a></p>
     </section>
 
-    <section class="grid-2 reveal">
+    <section class="grid-2 reveal" id="catalog">
       <article class="card">
-        <h2>Products & services catalog</h2>
+        <h2>🛍️ Product & service catalog</h2>
+        <p>Create product cards and prepare your online boutique catalog.</p>
         <form id="productForm" class="form-grid">
           <label>Product name<input name="name" required/></label>
           <label>Category<input name="category"/></label>
@@ -108,9 +111,9 @@
         </form>
         <ul id="productList" class="item-list"></ul>
       </article>
-
-      <article class="card">
-        <h2>Team & role management</h2>
+      <article class="card" id="team">
+        <h2>👥 Team workspace</h2>
+        <p>Assign team roles to reduce confusion and improve execution speed.</p>
         <form id="teamForm" class="form-grid">
           <label>Full name<input name="name" required/></label>
           <label>Role<select name="role"><option>Manager</option><option>Cashier</option><option>Sales</option><option>Support</option></select></label>
@@ -122,9 +125,10 @@
       </article>
     </section>
 
-    <section class="grid-2 reveal">
+    <section class="grid-2 reveal" id="agenda">
       <article class="card">
-        <h2>Agenda & task planner</h2>
+        <h2>🗓️ Agenda & Tasks</h2>
+        <p>Plan daily operations and deadlines to keep your business consistent.</p>
         <form id="agendaForm" class="form-grid">
           <label>Task title<input name="title" required/></label>
           <label>Date<input type="date" name="date" required/></label>
@@ -134,22 +138,23 @@
         </form>
         <ul id="agendaList" class="item-list"></ul>
       </article>
-
-      <article class="card">
-        <h2>Email marketing quick launch</h2>
+      <article class="card" id="marketing">
+        <h2>📣 Marketing Studio + AI Agents</h2>
+        <p>Prepare campaigns and AI-assisted communication drafts about your company, products and offers.</p>
         <form id="marketingForm" class="form-grid">
           <label>Campaign title<input name="title" required/></label>
-          <label>Audience<input name="audience" placeholder="VIP clients / New prospects"/></label>
+          <label>Audience<input name="audience"/></label>
           <label>Subject<input name="subject" required/></label>
           <label>Message<textarea name="message" required></textarea></label>
           <button class="btn primary" type="submit">Generate campaign draft</button>
         </form>
         <div id="marketingOutput" class="notice">No campaign draft yet.</div>
+        <p><a class="btn primary" href="pricing.html">Kòmanse kounya</a></p>
       </article>
     </section>
   </main>
 
-  <footer class="footer">Single support contact: contact@garoms-tech.com • +509 3368 8411</footer>
+  <footer class="footer">Zengo-JGM by Garoms-tech • contact@garoms-tech.com • +509 3368 8411</footer>
   <script src="app.js"></script>
 </body>
 </html>

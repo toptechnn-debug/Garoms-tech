@@ -76,3 +76,8 @@ th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-
 .mini{padding:12px;margin-bottom:8px}
 .item-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
 .list-row{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:10px;background:color-mix(in oklab,var(--panel) 90%,var(--brand-2) 10%)}
+.media-card{display:grid;place-items:center;min-height:280px}
+.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.module-card img{border-radius:12px;border:1px solid var(--line);margin-bottom:8px;min-height:160px;object-fit:cover}
+.quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+@media (max-width:980px){.module-grid{grid-template-columns:1fr}}
