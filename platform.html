@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Zengo-JGM | Espas Travay</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">🚀 Garoms-<span>tech</span></a>
+    <nav id="menu" class="menu">
+      <a href="index.html">Akèy</a>
+      <a class="active" href="platform.html">Zengo-JGM</a>
+      <a href="market-intelligence.html">Mache</a>
+      <a href="pricing.html">Plan</a>
+      <a href="auth.html">Konekte</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+    <div class="actions">
+      <select id="langSelect" class="select"><option value="ht">HT</option><option value="fr">FR</option><option value="en">EN</option></select>
+      <button id="themeToggle" class="icon-btn">🌙</button>
+      <button id="menuBtn" class="icon-btn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card reveal" id="overview">
+      <h1>Zengo-JGM Espas Travay</h1>
+      <p>Yon sistèm klè pou jere dèt, pwodwi, ekip, ajanda, maketing ak asistans AI pou biznis an Ayiti.</p>
+      <div class="quick-links">
+        <a class="btn" href="#debt">Liv Dèt</a>
+        <a class="btn" href="#catalog">Pwodwi</a>
+        <a class="btn" href="#team">Ekip</a>
+        <a class="btn" href="#agenda">Ajanda</a>
+        <a class="btn" href="#marketing">Maketing</a>
+      </div>
+    </section>
+
+    <section class="grid-2 reveal" id="profile">
+      <article class="card">
+        <h2>Profil biznis</h2>
+        <p>Mete tout enfòmasyon biznis ou yon sèl fwa pou w opere pi byen.</p>
+        <form id="businessProfileForm" class="form-grid">
+          <label>Non biznis<input name="businessName" required/></label>
+          <label>Kalite biznis<input name="businessType"/></label>
+          <label>Peyi<input name="country" required/></label>
+          <label>Vil<input name="city" required/></label>
+          <label>Zòn lokal<input name="local"/></label>
+          <label>Sèvis prensipal<input name="services"/></label>
+          <label>Imèl ofisyèl<input type="email" name="email"/></label>
+          <label>Telefòn / WhatsApp<input name="phone"/></label>
+          <label>Tèm biznis<select name="themePref"><option>Ble pwofesyonèl</option><option>Navy fonse</option><option>Vèt fre</option></select></label>
+          <button class="btn primary" type="submit">Anrejistre profil</button>
+        </form>
+      </article>
+      <article class="card">
+        <h2>Lyen kliyan sekirize</h2>
+        <p>Kliyan yo wè sèlman enfòmasyon ki gen rapò ak yo.</p>
+        <div id="profilePreview" class="card mini">Pa gen profil ankò.</div>
+        <label>Lyen profil kliyan<input id="customerLink" readonly/></label>
+        <label>Lyen referans<input id="referralOutput" readonly/></label>
+        <form id="inviteForm" class="form-grid">
+          <label>Kòd kout biznis<input name="business"/></label>
+          <button class="btn" type="submit">Jenere kòd referans</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="card reveal" id="debt">
+      <h2>📒 Liv Dèt Digital</h2>
+      <p>Siveye dèt kliyan yo, delè peman yo, epi estati chak dosye.</p>
+      <div class="grid-4">
+        <article class="card stat"><h3>Kliyan dwe mwen</h3><p id="totalReceivable">0 HTG</p></article>
+        <article class="card stat"><h3>Mwen dwe</h3><p id="totalPayable">0 HTG</p></article>
+        <article class="card stat"><h3>Dosye aktif</h3><p id="activeCount">0</p></article>
+        <article class="card stat"><h3>Limit plan</h3><p id="planLimitInfo">Plan limit: 30 active records.</p></article>
+      </div>
+      <form id="debtForm" class="form-grid">
+        <label>Non kliyan<input name="clientName" required/></label>
+        <label>Telefòn<input name="phone"/></label>
+        <label>Atik / sèvis<input name="item"/></label>
+        <label>Kalite<select name="kind"><option value="receivable">Kliyan dwe mwen</option><option value="payable">Mwen dwe</option></select></label>
+        <label>Kantite (HTG)<input name="amount" type="number" min="1" required/></label>
+        <label>Dat limit<input name="dueDate" type="date"/></label>
+        <label>Nòt<textarea name="note"></textarea></label>
+        <label>Plan<select id="planSelect"><option value="free">Gratis</option><option value="week">Semèn</option><option value="month">Mwa</option><option value="year">Ane</option></select></label>
+        <button class="btn primary" type="submit">Sove dosye</button>
+      </form>
+      <p id="formNote"></p>
+      <div class="toolbar">
+        <input id="searchInput" placeholder="Chèche dosye"/>
+        <select id="filterKind"><option value="all">Tout</option><option value="receivable">Kliyan dwe mwen</option><option value="payable">Mwen dwe</option><option value="paid">Peye</option><option value="unpaid">Louvri</option></select>
+      </div>
+      <p id="autoMessage" class="notice"></p>
+      <div class="table-wrap"><table><thead><tr><th>Kliyan</th><th>Kalite</th><th>Kantite</th><th>Dat</th><th>Estati</th><th>Aksyon</th></tr></thead><tbody id="debtTable"></tbody></table></div>
+      <p><a class="btn primary" href="pricing.html">Kòmanse kounya</a></p>
+    </section>
+
+    <section class="grid-2 reveal" id="catalog">
+      <article class="card">
+        <h2>🛍️ Katalòg pwodwi / sèvis</h2>
+        <form id="productForm" class="form-grid">
+          <label>Non pwodwi<input name="name" required/></label>
+          <label>Kategori<input name="category"/></label>
+          <label>Pri (HTG)<input type="number" min="1" name="price" required/></label>
+          <label>Stock / kapasite<input type="number" min="0" name="stock"/></label>
+          <label>Deskripsyon<textarea name="description"></textarea></label>
+          <button class="btn primary" type="submit">Ajoute pwodwi</button>
+        </form>
+        <ul id="productList" class="item-list"></ul>
+      </article>
+      <article class="card" id="team">
+        <h2>👥 Jesyon ekip</h2>
+        <form id="teamForm" class="form-grid">
+          <label>Non konplè<input name="name" required/></label>
+          <label>Wòl<select name="role"><option>Manadjè</option><option>Kèsye</option><option>Vant</option><option>Support</option></select></label>
+          <label>Telefòn<input name="phone"/></label>
+          <label>Imèl<input type="email" name="email"/></label>
+          <button class="btn primary" type="submit">Ajoute manm ekip</button>
+        </form>
+        <ul id="teamList" class="item-list"></ul>
+      </article>
+    </section>
+
+    <section class="grid-2 reveal" id="agenda">
+      <article class="card">
+        <h2>🗓️ Ajanda</h2>
+        <form id="agendaForm" class="form-grid">
+          <label>Tit travay<input name="title" required/></label>
+          <label>Dat<input type="date" name="date" required/></label>
+          <label>Priyorite<select name="priority"><option>Wo</option><option>Mwayen</option><option>Ba</option></select></label>
+          <label>Detay<textarea name="details"></textarea></label>
+          <button class="btn primary" type="submit">Planifye</button>
+        </form>
+        <ul id="agendaList" class="item-list"></ul>
+      </article>
+      <article class="card" id="marketing">
+        <h2>📣 Maketing + AI Agents</h2>
+        <form id="marketingForm" class="form-grid">
+          <label>Tit kanpay<input name="title" required/></label>
+          <label>Odyans<input name="audience"/></label>
+          <label>Sijè<input name="subject" required/></label>
+          <label>Mesaj<textarea name="message" required></textarea></label>
+          <button class="btn primary" type="submit">Jenere draft</button>
+        </form>
+        <div id="marketingOutput" class="notice">Pa gen draft ankò.</div>
+        <p><a class="btn primary" href="pricing.html">Kòmanse kounya</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer pro-footer"><div class="footer-grid"><div><h4>Zengo-JGM</h4><p>Pa Garoms-tech • Espesyal pou biznis an Ayiti 🇭🇹</p></div><div><h4>Kontak</h4><p>contact@garoms-tech.com<br/>+509 3368 8411</p></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
