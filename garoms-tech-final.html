@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAROMS-TECH — IA & Automatisation | Depuis 2023</title>
+  <meta name="description" content="GAROMS-TECH transforme votre business avec l'IA et l'automatisation. Chatbots intelligents, agents IA, développement web et marketing digital. Résultats concrets dès la première semaine." />
+  <meta property="og:title" content="GAROMS-TECH — IA & Automatisation" />
+  <meta property="og:description" content="Systèmes intelligents qui travaillent 24/7 pour votre business." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70VF95VJ9M"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-70VF95VJ9M');</script>
+<style>
+:root{
+  --p:#0057FF;--pd:#0040CC;--dark:#0A1628;--dk2:#0d1f3c;
+  --acc:#00D4FF;--light:#F4F7FF;--w:#FFFFFF;
+  --g2:#E2E8F0;--g3:#CBD5E1;--g4:#94A3B8;--g5:#64748B;--g6:#475569;
+  --green:#22C55E;--red:#EF4444;
+  --fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;
+  --r:12px;--rsm:8px;--rlg:20px;--rf:9999px;
+  --slg:0 8px 32px rgba(0,87,255,.12);
+  --sblue:0 8px 30px rgba(0,87,255,.35);
+  --tr:all .3s cubic-bezier(.4,0,.2,1);
+  --ts:all .4s cubic-bezier(.34,1.56,.64,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--fb);color:var(--dark);background:var(--w);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6;}
+img{max-width:100%;display:block;}a{color:inherit;text-decoration:none;transition:var(--tr);}button{cursor:pointer;border:none;background:none;font-family:var(--fb);transition:var(--tr);}ul{list-style:none;}
+.c{width:100%;max-width:1280px;margin:0 auto;padding:0 1.25rem;}
+@media(min-width:768px){.c{padding:0 2rem;}}
+@media(min-width:1024px){.c{padding:0 3rem;}}
+section{padding:6rem 0;}
+.sh{margin-bottom:3.5rem;}
+.sh.cnt{text-align:center;display:flex;flex-direction:column;align-items:center;}
+.sbadge{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;color:var(--p);background:rgba(0,87,255,.07);border:1px solid rgba(0,87,255,.15);padding:.3rem .9rem;border-radius:var(--rf);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;}
+.stitle{font-family:var(--fh);font-size:clamp(1.9rem,4vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-.025em;color:var(--dark);margin-bottom:.85rem;}
+.ssub{font-size:1.05rem;color:var(--g5);max-width:580px;line-height:1.75;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.9rem;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:.95rem;transition:var(--ts);cursor:pointer;border:2px solid transparent;white-space:nowrap;}
+.btnp{background:var(--p);color:var(--w);box-shadow:0 4px 20px rgba(0,87,255,.3);}
+.btnp:hover{background:var(--pd);box-shadow:var(--sblue);transform:translateY(-2px);}
+.btno{background:transparent;color:var(--p);border-color:var(--p);}
+.btno:hover{background:var(--p);color:var(--w);transform:translateY(-2px);}
+.btnwp{background:#25D366;color:var(--w);box-shadow:0 4px 20px rgba(37,211,102,.3);}
+.btnwp:hover{background:#1ebe5d;transform:translateY(-2px);}
+
+/* LOADING */
+.ls{position:fixed;inset:0;background:var(--dark);z-index:9999;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.lbg span{position:absolute;border-radius:50%;filter:blur(100px);animation:lfloat 8s infinite ease-in-out;opacity:0;}
+.lbg span:nth-child(1){width:600px;height:600px;background:radial-gradient(circle,rgba(0,87,255,.6),transparent);top:-250px;right:-150px;}
+.lbg span:nth-child(2){width:400px;height:400px;background:radial-gradient(circle,rgba(0,212,255,.4),transparent);bottom:-120px;left:-100px;animation-delay:2s;}
+.lbg span:nth-child(3){width:300px;height:300px;background:radial-gradient(circle,rgba(0,87,255,.25),transparent);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:1s;}
+@keyframes lfloat{0%,100%{opacity:.12;transform:translateY(0);}50%{opacity:.3;transform:translateY(-30px);}}
+.lc{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1.75rem;text-align:center;padding:2rem;max-width:500px;}
+.lring-wrap{position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:.25rem;}
+.lring{position:absolute;border-radius:50%;border:1.5px solid transparent;animation:lspin 3s linear infinite;}
+.lring1{width:110px;height:110px;border-top-color:var(--p);border-right-color:rgba(0,87,255,.3);}
+.lring2{width:130px;height:130px;border-bottom-color:var(--acc);border-left-color:rgba(0,212,255,.2);animation-direction:reverse;animation-duration:4s;}
+.lring3{width:150px;height:150px;border-top-color:rgba(0,87,255,.15);border-right-color:rgba(0,212,255,.1);animation-duration:6s;}
+@keyframes lspin{to{transform:rotate(360deg);}}
+.llogo{display:flex;flex-direction:column;align-items:center;gap:.6rem;opacity:0;transform:translateY(28px);z-index:1;}
+.llogo img{width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 0 24px rgba(0,212,255,.7));border-radius:16px;}
+.lname{font-family:var(--fh);font-size:2.8rem;font-weight:900;line-height:1;letter-spacing:-.04em;}
+.lname .n{color:var(--w);}.lname .t{background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.ltag{font-size:.82rem;color:rgba(255,255,255,.5);opacity:0;letter-spacing:.12em;text-transform:uppercase;}
+.lpbar{width:min(320px,82vw);height:3px;background:rgba(255,255,255,.07);border-radius:var(--rf);overflow:hidden;opacity:0;position:relative;}
+.lpfill{height:100%;width:0%;background:linear-gradient(90deg,var(--p),var(--acc),var(--p));background-size:200%;animation:lshift 2s linear infinite;border-radius:var(--rf);}
+@keyframes lshift{0%{background-position:0%;}100%{background-position:200%;}}
+.lpct{font-family:var(--fh);font-size:.8rem;color:rgba(255,255,255,.45);font-weight:600;opacity:0;letter-spacing:.15em;}
+.lskip{font-family:var(--fh);font-size:.78rem;color:rgba(255,255,255,.3);padding:.45rem 1.1rem;border:1px solid rgba(255,255,255,.08);border-radius:var(--rf);background:transparent;opacity:0;transition:var(--tr);}
+.lskip:hover{color:var(--w);border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.05);}
+
+/* HEADER */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.93);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:var(--tr);}
+.hdr.on{border-bottom-color:rgba(0,87,255,.08);box-shadow:0 2px 24px rgba(0,87,255,.07);}
+.hdrin{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1.5rem;}
+.logo{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
+.logo img{width:54px;height:54px;object-fit:contain;}
+.logo-t{font-family:var(--fh);font-size:1.3rem;font-weight:900;color:var(--dark);letter-spacing:-.02em;}
+.logo-t span{color:var(--p);}
+.hnav{display:none;align-items:center;gap:1.75rem;}
+@media(min-width:1024px){.hnav{display:flex;}}
+.hnav a{font-family:var(--fh);font-size:.85rem;font-weight:600;color:var(--g6);position:relative;}
+.hnav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--p);border-radius:2px;transition:width .25s;}
+.hnav a:hover{color:var(--p);}.hnav a:hover::after{width:100%;}
+.hacts{display:flex;align-items:center;gap:.75rem;}
+.hcta{display:none;padding:.6rem 1.3rem;font-size:.85rem;}
+@media(min-width:768px){.hcta{display:inline-flex;}}
+.hmb{display:flex;flex-direction:column;justify-content:space-between;width:26px;height:18px;flex-shrink:0;}
+@media(min-width:1024px){.hmb{display:none;}}
+.hmb span{display:block;height:2px;background:var(--dark);border-radius:2px;transition:var(--tr);transform-origin:left;}
+.hmb.o span:nth-child(1){transform:rotate(45deg) translateY(-1px);}
+.hmb.o span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hmb.o span:nth-child(3){transform:rotate(-45deg) translateY(1px);}
+.mmenu{display:none;flex-direction:column;gap:1rem;padding:1.5rem 1.25rem;background:var(--w);border-top:1px solid var(--g2);box-shadow:0 12px 30px rgba(0,0,0,.08);}
+.mmenu.o{display:flex;animation:mdown .28s ease;}
+@keyframes mdown{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:translateY(0);}}
+.mmenu nav{display:flex;flex-direction:column;}
+.mmenu nav a{font-family:var(--fh);font-size:1rem;font-weight:600;color:var(--g6);padding:.8rem .5rem;border-bottom:1px solid var(--g2);}
+.mmenu nav a:last-child{border-bottom:none;}
+.mmenu nav a:hover{color:var(--p);background:var(--light);padding-left:.75rem;}
+.mmenu .btn{align-self:flex-start;font-size:.875rem;margin-top:.5rem;}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:72px;overflow:hidden;background:var(--dark);}
+.hero-canvas{position:absolute;inset:0;z-index:0;}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(0,87,255,.18) 0%,transparent 70%);}
+.hero-line{position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,87,255,.4),rgba(0,212,255,.6),rgba(0,87,255,.4),transparent);}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,87,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,87,255,.06) 1px,transparent 1px);background-size:60px 60px;}
+.hero-in{display:grid;grid-template-columns:1fr;gap:3rem;padding:5rem 0 4rem;align-items:center;position:relative;z-index:1;}
+@media(min-width:1024px){.hero-in{grid-template-columns:55% 45%;gap:2rem;}}
+.hero-c{display:flex;flex-direction:column;gap:1.75rem;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fh);font-size:.75rem;font-weight:700;color:var(--acc);letter-spacing:.15em;text-transform:uppercase;}
+.hero-eyebrow::before{content:'';width:32px;height:2px;background:var(--acc);border-radius:2px;}
+.hero-h1{font-family:var(--fh);font-size:clamp(3rem,7vw,5.5rem);font-weight:900;line-height:.98;letter-spacing:-.035em;color:var(--w);}
+.hero-h1 .line2{display:block;background:linear-gradient(135deg,var(--p),var(--acc),var(--w));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-desc{font-size:1.1rem;color:rgba(255,255,255,.6);line-height:1.8;max-width:560px;}
+.hero-btns{display:flex;gap:.875rem;flex-wrap:wrap;}
+.hero-btns .btno{color:rgba(255,255,255,.75);border-color:rgba(255,255,255,.25);}
+.hero-btns .btno:hover{background:rgba(255,255,255,.08);color:var(--w);border-color:rgba(255,255,255,.5);}
+.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
+.htag{font-family:var(--fh);font-size:.72rem;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:.3rem .8rem;border-radius:var(--rf);}
+.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.5rem;}
+.hm{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:1rem;text-align:center;}
+.hm-n{font-family:var(--fh);font-size:1.8rem;font-weight:900;background:linear-gradient(135deg,var(--w),rgba(255,255,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.hm-l{font-size:.7rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem;}
+.hero-vis{position:relative;display:flex;align-items:center;justify-content:center;}
+.hero-screen{background:rgba(255,255,255,.03);border:1px solid rgba(0,87,255,.25);border-radius:var(--rlg);padding:1.5rem;backdrop-filter:blur(12px);box-shadow:0 24px 80px rgba(0,87,255,.2),inset 0 1px 0 rgba(255,255,255,.06);max-width:380px;width:100%;animation:screenFloat 4s ease-in-out infinite;will-change:transform;}
+@keyframes screenFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.hs-header{display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,255,255,.07);}
+.hs-dots{display:flex;gap:.4rem;}
+.hs-dot{width:10px;height:10px;border-radius:50%;}
+.hs-d1{background:#FF5F56;}.hs-d2{background:#FFBD2E;}.hs-d3{background:#27C93F;}
+.hs-title{font-family:var(--fh);font-size:.75rem;font-weight:600;color:rgba(255,255,255,.35);margin-left:.25rem;}
+.hs-body{display:flex;flex-direction:column;gap:.6rem;}
+.hs-row{display:flex;align-items:center;gap:.6rem;}
+.hs-ico{width:28px;height:28px;border-radius:var(--rsm);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+.hs-ico.blue{background:rgba(0,87,255,.25);}
+.hs-ico.acc{background:rgba(0,212,255,.15);}
+.hs-ico.grn{background:rgba(34,197,94,.15);}
+.hs-text{flex:1;}
+.hs-label{font-size:.72rem;color:rgba(255,255,255,.35);font-weight:500;margin-bottom:.15rem;}
+.hs-val{font-family:var(--fh);font-size:.85rem;font-weight:700;color:rgba(255,255,255,.85);}
+.hs-bar{height:4px;background:rgba(255,255,255,.06);border-radius:var(--rf);overflow:hidden;margin-top:.2rem;}
+.hs-fill{height:100%;border-radius:var(--rf);}
+.hs-fillp{background:linear-gradient(90deg,var(--p),var(--acc));}
+.hs-fills{background:linear-gradient(90deg,var(--green),#86efac);}
+.hs-badge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);border-radius:var(--rf);padding:.3rem .75rem;font-family:var(--fh);font-size:.72rem;font-weight:700;color:#4ade80;margin-top:.5rem;}
+.hs-pulse{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:pulse 1.8s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.8);}}
+.hfb{position:absolute;display:flex;align-items:center;gap:.5rem;background:rgba(10,22,40,.9);backdrop-filter:blur(12px);border:1px solid rgba(0,87,255,.2);border-radius:var(--rf);padding:.55rem 1rem;font-family:var(--fh);font-size:.72rem;font-weight:700;color:var(--w);box-shadow:0 8px 30px rgba(0,0,0,.3);white-space:nowrap;z-index:5;}
+.hfb1{top:-4%;left:-5%;animation:fb1 3.2s ease-in-out infinite;}
+.hfb2{bottom:5%;right:-5%;animation:fb2 3.8s ease-in-out infinite;animation-delay:.5s;}
+@keyframes fb1{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+@keyframes fb2{0%,100%{transform:translateY(0);}50%{transform:translateY(9px);}}
+.hfb-ico{width:22px;height:22px;border-radius:6px;background:var(--p);display:flex;align-items:center;justify-content:center;font-size:.75rem;}
+.hfb-ico.g{background:rgba(34,197,94,.2);}
+
+/* MARQUEE */
+.marquee{background:linear-gradient(90deg,var(--dark),#0c1a2e,var(--dark));padding:1rem 0;overflow:hidden;border-top:1px solid rgba(0,87,255,.12);border-bottom:1px solid rgba(0,87,255,.12);position:relative;}
+.marquee::before,.marquee::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--dark),transparent);}
+.marquee::after{right:0;background:linear-gradient(-90deg,var(--dark),transparent);}
+.mq-track{display:flex;width:max-content;animation:mqs 40s linear infinite;}
+.mq-track:hover{animation-play-state:paused;}
+@keyframes mqs{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.mq-set{display:flex;align-items:center;flex-shrink:0;}
+.mq-set span{font-family:var(--fh);font-size:.8rem;font-weight:700;color:rgba(255,255,255,.4);padding:0 1.5rem;white-space:nowrap;}
+.mq-set span.hl{color:rgba(0,212,255,.7);}
+
+/* STATS COUNTER */
+.stats{background:linear-gradient(135deg,var(--dark),var(--dk2));padding:4rem 0;border-bottom:1px solid rgba(0,87,255,.15);}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+@media(min-width:768px){.stats-grid{grid-template-columns:repeat(4,1fr);}}
+.stat-item{text-align:center;padding:2rem 1rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--rlg);transition:var(--ts);}
+.stat-item:hover{border-color:rgba(0,87,255,.3);background:rgba(0,87,255,.06);transform:translateY(-4px);}
+.stat-n{font-family:var(--fh);font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,var(--acc),var(--w));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.35rem;}
+.stat-l{font-size:.8rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.1em;}
+.stat-i{font-size:1.5rem;margin-bottom:.75rem;}
+
+/* HOW IT WORKS */
+.hiw{background:var(--light);}
+.hiw-steps{display:grid;grid-template-columns:1fr;gap:0;position:relative;}
+@media(min-width:1024px){.hiw-steps{grid-template-columns:repeat(4,1fr);}}
+.hiw-step{background:var(--w);border:1.5px solid var(--g2);border-radius:var(--rlg);padding:2rem 1.5rem;text-align:center;position:relative;transition:var(--ts);}
+@media(min-width:1024px){.hiw-step:not(:last-child)::after{content:'→';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--p);font-weight:900;z-index:2;}}
+.hiw-step:hover{border-color:rgba(0,87,255,.25);box-shadow:var(--slg);transform:translateY(-4px);}
+.hiw-nb{width:52px;height:52px;background:linear-gradient(135deg,var(--p),var(--acc));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:1.05rem;font-weight:900;color:var(--w);margin:0 auto 1rem;box-shadow:0 8px 20px rgba(0,87,255,.35);}
+.hiw-ico{font-size:2rem;margin-bottom:.75rem;}
+.hiw-t{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:.5rem;}
+.hiw-d{font-size:.85rem;color:var(--g5);line-height:1.65;}
+.hiw-gap{display:none;}
+@media(min-width:1024px){.hiw-steps{gap:2rem;}.hiw-gap{display:block;}}
+
+/* A PROPOS */
+.ap{background:var(--w);}
+.ap-grid{display:grid;grid-template-columns:1fr;gap:4rem;align-items:center;}
+@media(min-width:1024px){.ap-grid{grid-template-columns:1fr 1fr;}}
+.ap-kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;}
+.ap-k{background:var(--light);border:1.5px solid var(--g2);border-radius:var(--r);padding:1.25rem;text-align:center;transition:var(--ts);}
+.ap-k:hover{border-color:rgba(0,87,255,.3);transform:translateY(-3px);}
+.ap-kn{font-family:var(--fh);font-size:1.75rem;font-weight:900;background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.ap-kl{font-size:.72rem;color:var(--g5);text-transform:uppercase;letter-spacing:.08em;margin-top:.3rem;}
+.ap-quote-box{background:linear-gradient(135deg,var(--dark),var(--dk2));border-radius:var(--rlg);padding:2rem;position:relative;overflow:hidden;}
+.ap-quote-box::before{content:'"';font-family:var(--fh);font-size:10rem;font-weight:900;color:rgba(0,87,255,.1);position:absolute;top:-2rem;left:1rem;line-height:1;pointer-events:none;}
+.ap-qt{font-family:var(--fh);font-size:1.05rem;font-weight:600;color:var(--w);line-height:1.7;position:relative;z-index:1;margin-bottom:1rem;}
+.ap-qa{font-size:.8rem;color:var(--acc);font-weight:700;}
+.ap-pillar-row{display:flex;flex-direction:column;gap:.875rem;}
+.ap-pi{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.25rem;background:var(--light);border:1.5px solid var(--g2);border-radius:var(--r);transition:var(--tr);}
+.ap-pi:hover{border-color:rgba(0,87,255,.25);background:var(--w);box-shadow:var(--slg);}
+.ap-pi-i{font-size:1.5rem;flex-shrink:0;width:44px;height:44px;background:rgba(0,87,255,.08);border-radius:var(--rsm);display:flex;align-items:center;justify-content:center;}
+.ap-pi-t{font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--dark);margin-bottom:.25rem;}
+.ap-pi-d{font-size:.85rem;color:var(--g5);line-height:1.6;}
+
+/* SERVICES */
+.svc{background:var(--dark);}
+.svc-avt{width:64px;height:64px;border-radius:18px;overflow:hidden;flex-shrink:0;box-shadow:0 8px 24px rgba(0,87,255,.3),0 0 0 1px rgba(255,255,255,.06);transition:var(--ts);}
+.scard:hover .svc-avt{transform:scale(1.08) rotate(-2deg);box-shadow:0 12px 32px rgba(0,87,255,.45);}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;}
+@media(min-width:768px){.svc-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1280px){.svc-grid{grid-template-columns:repeat(3,1fr);}}
+.scard{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:var(--rlg);padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1.25rem;transition:var(--ts);position:relative;overflow:hidden;}
+.scard::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--p),var(--acc));transform:scaleX(0);transition:transform .35s;transform-origin:left;}
+.scard:hover{border-color:rgba(0,87,255,.3);background:rgba(0,87,255,.06);transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.3);}
+.scard:hover::after{transform:scaleX(1);}
+.scard.star{background:linear-gradient(135deg,rgba(0,87,255,.15),rgba(0,212,255,.06));border-color:rgba(0,87,255,.3);}
+.sico{width:52px;height:52px;background:rgba(0,87,255,.2);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;}
+.sico.acc{background:rgba(0,212,255,.12);}
+.sico.star{background:linear-gradient(135deg,var(--p),var(--acc));}
+.svc-avt{width:64px;height:64px;border-radius:var(--rlg);overflow:hidden;flex-shrink:0;display:block;}
+.svc-avt svg{width:100%;height:100%;display:block;}
+.st{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--w);}
+.sd{font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.7;}
+.svc-ba{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;}
+.sba{border-radius:var(--rsm);padding:.75rem;}
+.sba.red{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.15);}
+.sba.grn{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.15);}
+.sba-label{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem;}
+.sba.red .sba-label{color:#F87171;}
+.sba.grn .sba-label{color:#4ade80;}
+.sba-txt{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.55;}
+.s-delay{display:inline-flex;align-items:center;gap:.35rem;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.15);border-radius:var(--rf);padding:.25rem .75rem;font-size:.7rem;font-weight:700;color:var(--acc);margin-top:.25rem;}
+
+/* POURQUOI */
+.pq{background:var(--light);}
+.pq-list{display:grid;grid-template-columns:1fr;gap:1rem;}
+@media(min-width:768px){.pq-list{grid-template-columns:repeat(2,1fr);}}
+.pq-item{background:var(--w);border:1.5px solid var(--g2);border-radius:var(--rlg);padding:1.75rem;display:flex;gap:1.25rem;align-items:flex-start;transition:var(--ts);}
+.pq-item:hover{border-color:rgba(0,87,255,.25);box-shadow:var(--slg);transform:translateY(-4px);}
+.pq-num{font-family:var(--fh);font-size:2rem;font-weight:900;background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;flex-shrink:0;width:2.5rem;}
+.pq-body{flex:1;}
+.pq-t{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem;}
+.pq-d{font-size:.875rem;color:var(--g5);line-height:1.65;}
+.pq-vs{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:3rem;border-radius:var(--rlg);overflow:hidden;border:1.5px solid var(--g2);}
+.pq-vside{padding:2rem;}
+.pq-vside.dark{background:var(--dark);}
+.pq-vside.lite{background:var(--w);}
+.pq-vs-t{font-family:var(--fh);font-size:1rem;font-weight:800;margin-bottom:1.25rem;}
+.pq-vside.dark .pq-vs-t{color:var(--w);}
+.pq-vside.lite .pq-vs-t{color:var(--dark);}
+.pq-vlist{display:flex;flex-direction:column;gap:.6rem;}
+.pq-vi{display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;line-height:1.6;}
+.pq-vside.dark .pq-vi{color:rgba(255,255,255,.5);}
+.pq-vside.lite .pq-vi{color:var(--g5);}
+.pq-cta{margin-top:3rem;background:linear-gradient(135deg,var(--dark),var(--dk2));border-radius:var(--rlg);padding:3.5rem;text-align:center;position:relative;overflow:hidden;}
+.pq-cta::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,87,255,.15),transparent 70%);pointer-events:none;}
+.pq-cta-t{font-family:var(--fh);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:900;color:var(--w);margin-bottom:.75rem;}
+.pq-cta-s{color:rgba(255,255,255,.5);margin-bottom:.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
+.pq-cta-free{display:inline-flex;align-items:center;gap:.4rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);border-radius:var(--rf);padding:.35rem 1rem;font-family:var(--fh);font-size:.8rem;font-weight:700;color:#4ade80;margin-bottom:2rem;}
+.pq-cta-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
+
+/* DEMO */
+.demo{background:var(--dark);}
+.demo-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;}
+@media(min-width:1024px){.demo-grid{grid-template-columns:1fr 1fr;}}
+.demo-tag{display:inline-flex;align-items:center;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.15);border-radius:var(--rf);padding:.35rem .9rem;font-size:.72rem;font-weight:700;color:var(--acc);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;}
+.demo-points{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem;}
+.dp{display:flex;align-items:flex-start;gap:.75rem;}
+.dp-ic{width:28px;height:28px;border-radius:var(--rsm);background:rgba(0,87,255,.15);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+.dp-t{font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.5;}
+.dp-t strong{color:var(--w);}
+.demo-note{margin-top:1.5rem;background:rgba(0,87,255,.1);border:1px solid rgba(0,87,255,.2);border-radius:var(--r);padding:1rem 1.25rem;font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.6;}
+.demo-note strong{color:var(--acc);}
+.chat-ui{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);overflow:hidden;max-width:440px;margin:0 auto;box-shadow:0 24px 60px rgba(0,0,0,.4);}
+.cui-bar{display:flex;align-items:center;gap:.5rem;padding:.75rem 1rem;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.06);}
+.cui-dots{display:flex;gap:.35rem;}
+.cui-dot{width:9px;height:9px;border-radius:50%;}
+.cui-d1{background:#FF5F56;}.cui-d2{background:#FFBD2E;}.cui-d3{background:#27C93F;}
+.cui-title{font-family:var(--fh);font-size:.72rem;font-weight:600;color:rgba(255,255,255,.3);margin-left:.25rem;}
+.cui-hdr{display:flex;align-items:center;gap:.75rem;padding:.875rem 1.25rem;background:rgba(0,87,255,.12);border-bottom:1px solid rgba(255,255,255,.06);}
+.cui-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--acc));display:flex;align-items:center;justify-content:center;font-size:.875rem;flex-shrink:0;}
+.cui-name{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--w);}
+.cui-biz{font-size:.72rem;color:var(--acc);}
+.cui-online{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;margin-right:4px;animation:pulse 2s infinite;}
+.cui-body{padding:1.25rem;display:flex;flex-direction:column;gap:.75rem;max-height:300px;overflow-y:auto;}
+.msg{max-width:82%;padding:.65rem 1rem;border-radius:var(--r);font-size:.82rem;line-height:1.55;}
+.msg.bot{background:rgba(255,255,255,.07);color:rgba(255,255,255,.8);align-self:flex-start;border-radius:4px var(--r) var(--r) var(--r);}
+.msg.usr{background:var(--p);color:var(--w);align-self:flex-end;border-radius:var(--r) 4px var(--r) var(--r);}
+.msg.sys{background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.15);color:rgba(0,212,255,.9);align-self:center;border-radius:var(--rsm);font-size:.72rem;font-weight:600;text-align:center;max-width:100%;}
+.cui-inp{padding:.875rem 1rem;background:rgba(255,255,255,.03);border-top:1px solid rgba(255,255,255,.05);display:flex;gap:.5rem;}
+.cui-inpf{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:var(--rf);padding:.5rem .875rem;font-size:.8rem;color:var(--w);outline:none;}
+.cui-inpf::placeholder{color:rgba(255,255,255,.25);}
+.cui-send{width:30px;height:30px;background:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0;color:var(--w);}
+
+/* EQUIPE */
+.eq{background:var(--w);}
+.eq-grid{display:grid;grid-template-columns:1fr;gap:2rem;}
+@media(min-width:768px){.eq-grid{grid-template-columns:repeat(3,1fr);}}
+.eq-card{background:var(--light);border:1.5px solid var(--g2);border-radius:var(--rlg);padding:2rem 1.5rem;text-align:center;transition:var(--ts);position:relative;overflow:hidden;}
+.eq-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--p),var(--acc));}
+.eq-card:hover{border-color:rgba(0,87,255,.25);box-shadow:var(--slg);transform:translateY(-6px);background:var(--w);}
+.eq-card.ceo{border-color:rgba(0,87,255,.2);background:var(--w);}
+.eq-photo{width:120px;height:120px;border-radius:50%;margin:0 auto 1.5rem;overflow:hidden;border:4px solid rgba(0,87,255,.2);position:relative;box-shadow:0 8px 30px rgba(0,87,255,.2);}
+.eq-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.eq-av{width:96px;height:96px;border-radius:50%;margin:0 auto 1.25rem;position:relative;}
+.partner-icon{width:80px;height:80px;margin:0 auto 1.25rem;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(0,87,255,.25);}
+.partner-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.68rem;font-weight:700;color:var(--p);background:rgba(0,87,255,.07);border:1px solid rgba(0,87,255,.15);padding:.2rem .65rem;border-radius:var(--rf);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6rem;}
+.partner-card{border-style:dashed;border-color:rgba(0,87,255,.15);background:var(--light) !important;}
+.partner-card:hover{border-style:solid;border-color:rgba(0,87,255,.25) !important;}
+.eq-name{font-family:var(--fh);font-size:1.05rem;font-weight:800;color:var(--dark);margin-bottom:.25rem;}
+.eq-role{display:inline-block;font-size:.72rem;font-weight:700;color:var(--p);background:rgba(0,87,255,.07);border:1px solid rgba(0,87,255,.12);padding:.25rem .75rem;border-radius:var(--rf);letter-spacing:.05em;text-transform:uppercase;margin-bottom:1rem;}
+.eq-desc{font-size:.85rem;color:var(--g5);line-height:1.65;margin-bottom:1rem;}
+.eq-skills{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;}
+.eq-skill{font-size:.7rem;font-weight:600;color:var(--g6);background:var(--g2);padding:.2rem .6rem;border-radius:var(--rf);}
+
+/* TEMOIGNAGES */
+.temo{background:var(--dark);overflow:hidden;}
+.swiper{width:100%;padding-bottom:3rem !important;}
+.swiper-slide{height:auto;}
+.temo-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);padding:2rem;display:flex;flex-direction:column;gap:1.25rem;height:100%;transition:var(--ts);}
+.temo-card:hover{border-color:rgba(0,87,255,.25);background:rgba(0,87,255,.06);}
+.temo-stars{display:flex;gap:.2rem;font-size:.9rem;}
+.temo-txt{font-family:var(--fh);font-size:.95rem;font-weight:500;color:rgba(255,255,255,.8);line-height:1.7;flex:1;font-style:italic;}
+.temo-author{display:flex;align-items:center;gap:.75rem;}
+.temo-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--acc));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--w);flex-shrink:0;}
+.temo-n{font-family:var(--fh);font-size:.875rem;font-weight:700;color:var(--w);}
+.temo-s{font-size:.75rem;color:rgba(255,255,255,.4);}
+.temo-badge{display:inline-flex;align-items:center;gap:.3rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.15);border-radius:var(--rf);padding:.2rem .6rem;font-size:.7rem;font-weight:700;color:#4ade80;}
+.swiper-pagination-bullet{background:rgba(255,255,255,.25)!important;}
+.swiper-pagination-bullet-active{background:var(--p)!important;}
+
+/* FAQ */
+.faq{background:var(--light);}
+.faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:800px;margin:0 auto;}
+.faq-item{background:var(--w);border:1.5px solid var(--g2);border-radius:var(--r);overflow:hidden;transition:var(--tr);}
+.faq-item.open{border-color:rgba(0,87,255,.25);box-shadow:0 4px 20px rgba(0,87,255,.08);}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem;cursor:pointer;}
+.faq-q-t{font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--dark);}
+.faq-item.open .faq-q-t{color:var(--p);}
+.faq-icon{width:24px;height:24px;border-radius:50%;background:var(--g2);display:flex;align-items:center;justify-content:center;font-size:.7rem;flex-shrink:0;transition:var(--tr);}
+.faq-item.open .faq-icon{background:var(--p);color:var(--w);transform:rotate(45deg);}
+.faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:.9rem;color:var(--g5);line-height:1.75;border-top:1px solid var(--g2);padding-top:1rem;}
+.faq-item.open .faq-a{display:block;}
+.faq-cta{max-width:800px;margin:2rem auto 0;background:var(--w);border:1.5px solid rgba(0,87,255,.15);border-radius:var(--rlg);padding:1.75rem;text-align:center;}
+.faq-cta-t{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:.5rem;}
+.faq-cta-s{font-size:.875rem;color:var(--g5);margin-bottom:1.25rem;}
+.faq-cta-btns{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;}
+
+/* CONTACT */
+.contact{background:var(--dark);}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:4rem;}
+@media(min-width:1024px){.contact-grid{grid-template-columns:1fr 1fr;}}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem;}
+.cinfo-item{display:flex;align-items:flex-start;gap:1rem;}
+.cinfo-ico{width:44px;height:44px;border-radius:var(--r);background:rgba(0,87,255,.15);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.cinfo-t{font-family:var(--fh);font-size:.85rem;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem;}
+.cinfo-v{font-size:.95rem;color:var(--w);font-weight:500;}
+.cinfo-v a{color:var(--acc);}
+.cinfo-v a:hover{color:var(--w);}
+.free-call-box{background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(0,87,255,.1));border:1px solid rgba(34,197,94,.2);border-radius:var(--rlg);padding:1.5rem;margin-top:.5rem;}
+.fcb-t{font-family:var(--fh);font-size:1rem;font-weight:800;color:var(--w);margin-bottom:.35rem;}
+.fcb-s{font-size:.85rem;color:rgba(255,255,255,.55);margin-bottom:1rem;line-height:1.6;}
+.fcb-link{display:inline-flex;align-items:center;gap:.5rem;background:var(--green);color:var(--w);padding:.65rem 1.25rem;border-radius:var(--r);font-family:var(--fh);font-size:.875rem;font-weight:700;transition:var(--ts);}
+.fcb-link:hover{background:#1ebe5d;transform:translateY(-2px);color:var(--w);}
+.cform{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);padding:2rem;}
+.cf-title{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--w);margin-bottom:.35rem;}
+.cf-subtitle{font-size:.82rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem;line-height:1.6;}
+.cfield{margin-bottom:.875rem;}
+.cfield label{display:block;font-size:.8rem;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:.4rem;letter-spacing:.05em;text-transform:uppercase;}
+.cfield input,.cfield select,.cfield textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--rsm);padding:.7rem 1rem;font-family:var(--fb);font-size:.9rem;color:var(--w);outline:none;transition:var(--tr);}
+.cfield input:focus,.cfield select:focus,.cfield textarea:focus{border-color:var(--p);background:rgba(0,87,255,.06);}
+.cfield input::placeholder,.cfield textarea::placeholder{color:rgba(255,255,255,.2);}
+.cfield select option{background:var(--dark);color:var(--w);}
+.cfield textarea{resize:vertical;min-height:90px;}
+.cfield-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.csecure{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.35);margin:.75rem 0;}
+.csecure-ico{font-size:.9rem;}
+.cform-btns{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:.25rem;}
+@media(max-width:480px){.cform-btns{grid-template-columns:1fr;}}
+.csend{justify-content:center;}
+.cf-ok{display:none;text-align:center;padding:1.5rem;}
+.cf-ok-ico{font-size:3rem;margin-bottom:.5rem;}
+.cf-ok-t{font-family:var(--fh);font-size:1rem;font-weight:700;color:var(--w);margin-bottom:.25rem;}
+.cf-ok-s{font-size:.85rem;color:rgba(255,255,255,.5);}
+
+/* SECOND FORM */
+.form2{background:linear-gradient(135deg,var(--dk2),var(--dark));border-top:1px solid rgba(255,255,255,.05);}
+.form2-inner{display:grid;grid-template-columns:1fr;gap:3rem;}
+@media(min-width:1024px){.form2-inner{grid-template-columns:1fr 1fr;}}
+.form2-info{display:flex;flex-direction:column;justify-content:center;gap:1rem;}
+.form2-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:.3rem .9rem;border-radius:var(--rf);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem;width:fit-content;}
+.form2-t{font-family:var(--fh);font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:var(--w);line-height:1.2;}
+.form2-s{font-size:.9rem;color:rgba(255,255,255,.45);line-height:1.7;}
+.form2-contact{display:flex;align-items:center;gap:.75rem;margin-top:.5rem;font-size:.85rem;color:rgba(255,255,255,.4);}
+.form2-contact a{color:var(--acc);}
+.form2-box{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);padding:2rem;}
+.form2-ok{display:none;text-align:center;padding:1.5rem;}
+
+/* NEWSLETTER */
+.nl{background:linear-gradient(135deg,var(--p),var(--pd));padding:4rem 0;}
+.nl-in{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.5rem;}
+@media(min-width:768px){.nl-in{flex-direction:row;text-align:left;justify-content:space-between;}}
+.nl-t{font-family:var(--fh);font-size:clamp(1.25rem,2.5vw,1.75rem);font-weight:800;color:var(--w);}
+.nl-s{font-size:.9rem;color:rgba(255,255,255,.7);margin-top:.25rem;}
+.nl-form{display:flex;gap:.75rem;flex-wrap:wrap;flex-shrink:0;}
+.nl-inp{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:var(--r);padding:.7rem 1.25rem;font-family:var(--fb);font-size:.9rem;color:var(--w);outline:none;min-width:240px;}
+.nl-inp::placeholder{color:rgba(255,255,255,.5);}
+.nl-inp:focus{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.5);}
+.nl-btn{background:var(--w);color:var(--p);padding:.7rem 1.5rem;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:.9rem;border:none;cursor:pointer;transition:var(--ts);}
+.nl-btn:hover{background:var(--light);transform:translateY(-2px);}
+
+/* FOOTER */
+.ft{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:4rem 0 2rem;}
+.ft-grid{display:grid;grid-template-columns:1fr;gap:3rem;margin-bottom:3rem;}
+@media(min-width:768px){.ft-grid{grid-template-columns:2fr 1fr 1fr 1fr;}}
+.ft-brand{display:flex;flex-direction:column;gap:1rem;}
+.ft-logo{display:flex;align-items:center;gap:.6rem;}
+.ft-logo img{width:44px;height:44px;object-fit:contain;}
+.ft-logo-t{font-family:var(--fh);font-size:1.15rem;font-weight:900;color:var(--w);letter-spacing:-.02em;}
+.ft-logo-t span{color:var(--acc);}
+.ft-desc{font-size:.85rem;color:rgba(255,255,255,.4);line-height:1.7;max-width:260px;}
+.ft-wa{display:inline-flex;align-items:center;gap:.5rem;background:#25D366;color:var(--w);padding:.5rem 1rem;border-radius:var(--r);font-family:var(--fh);font-size:.8rem;font-weight:700;margin-top:.25rem;transition:var(--ts);}
+.ft-wa:hover{background:#1ebe5d;transform:translateY(-2px);color:var(--w);}
+.ft-col-t{font-family:var(--fh);font-size:.8rem;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem;}
+.ft-links{display:flex;flex-direction:column;gap:.6rem;}
+.ft-links a{font-size:.875rem;color:rgba(255,255,255,.45);transition:var(--tr);}
+.ft-links a:hover{color:var(--acc);padding-left:.25rem;}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.ft-copy{font-size:.8rem;color:rgba(255,255,255,.25);}
+.ft-legal{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.ft-legal a{font-size:.8rem;color:rgba(255,255,255,.3);transition:var(--tr);}
+.ft-legal a:hover{color:rgba(255,255,255,.6);}
+
+/* FLOATING CHAT WIDGET */
+.chat-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9998;display:flex;flex-direction:column;align-items:flex-end;gap:.75rem;}
+.cf-bubble{background:linear-gradient(135deg,var(--dark),var(--dk2));border:1px solid rgba(0,87,255,.25);border-radius:var(--rlg);border-bottom-right-radius:4px;padding:.875rem 1.1rem;max-width:240px;box-shadow:0 8px 30px rgba(0,0,0,.3);display:none;}
+.cf-bubble.show{display:block;animation:cfSlide .4s ease-out;}
+@keyframes cfSlide{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.cf-bubble-t{font-family:var(--fh);font-size:.8rem;font-weight:700;color:var(--w);margin-bottom:.2rem;}
+.cf-bubble-s{font-size:.72rem;color:rgba(255,255,255,.45);}
+.cf-btn{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--acc));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 6px 24px rgba(0,87,255,.4);transition:var(--ts);position:relative;}
+.cf-btn:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(0,87,255,.5);}
+.cf-notif{position:absolute;top:-2px;right:-2px;width:16px;height:16px;background:var(--green);border-radius:50%;border:2px solid var(--w);animation:pulse 2s infinite;font-size:.55rem;font-family:var(--fh);font-weight:700;color:var(--w);display:flex;align-items:center;justify-content:center;}
+.cf-panel{position:fixed;bottom:5.5rem;right:1.5rem;width:min(380px,calc(100vw - 3rem));background:var(--dark);border:1px solid rgba(0,87,255,.2);border-radius:var(--rlg);box-shadow:0 24px 60px rgba(0,0,0,.5);z-index:9997;display:none;flex-direction:column;overflow:hidden;}
+.cf-panel.open{display:flex;animation:cfSlide .35s ease-out;}
+.cfp-hdr{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;background:rgba(0,87,255,.12);border-bottom:1px solid rgba(255,255,255,.06);}
+.cfp-av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--acc));display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+.cfp-title{font-family:var(--fh);font-size:.85rem;font-weight:700;color:var(--w);}
+.cfp-sub{font-size:.7rem;color:var(--acc);}
+.cfp-x{margin-left:auto;font-size:.9rem;color:rgba(255,255,255,.4);padding:.25rem;}
+.cfp-x:hover{color:var(--w);}
+.cfp-msgs{flex:1;padding:1rem;display:flex;flex-direction:column;gap:.6rem;max-height:280px;overflow-y:auto;}
+.cfp-inp{padding:.75rem 1rem;border-top:1px solid rgba(255,255,255,.05);display:flex;gap:.5rem;background:rgba(255,255,255,.02);}
+.cfp-inpf{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:var(--rf);padding:.5rem .875rem;font-size:.82rem;color:var(--w);outline:none;}
+.cfp-inpf::placeholder{color:rgba(255,255,255,.25);}
+.cfp-send{width:30px;height:30px;background:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--w);flex-shrink:0;}
+.cfp-typing{display:flex;align-items:center;gap:.4rem;padding:.4rem .75rem;background:rgba(255,255,255,.06);border-radius:var(--r) var(--r) var(--r) 4px;align-self:flex-start;display:none;}
+.cfp-typing span{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);animation:ty .9s infinite;}
+.cfp-typing span:nth-child(2){animation-delay:.2s;}
+.cfp-typing span:nth-child(3){animation-delay:.4s;}
+@keyframes ty{0%,80%,100%{transform:scale(.7);opacity:.4;}40%{transform:scale(1);opacity:1;}}
+.cfp-footer{padding:.6rem 1rem .75rem;border-top:1px solid rgba(255,255,255,.04);background:rgba(0,0,0,.2);}
+.cfp-disclaimer{font-size:.68rem;color:rgba(255,255,255,.28);line-height:1.5;text-align:center;}
+.cfp-disclaimer a{color:rgba(0,212,255,.6);text-decoration:underline;}
+
+/* TOAST */
+.toast{position:fixed;top:1.25rem;right:1.25rem;z-index:9000;max-width:min(400px,calc(100vw - 2.5rem));transform:translateX(calc(100% + 2rem));transition:transform .5s cubic-bezier(.34,1.56,.64,1);}
+.toast.on{transform:translateX(0);}
+.toast-in{background:var(--w);border-radius:var(--rlg);box-shadow:0 8px 40px rgba(0,0,0,.12);padding:1.25rem;display:flex;align-items:flex-start;gap:.875rem;border-left:4px solid var(--p);position:relative;}
+.t-ico{font-size:1.75rem;flex-shrink:0;line-height:1;}
+.t-b{flex:1;}
+.t-title{font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--dark);margin-bottom:.2rem;}
+.t-txt{font-size:.825rem;color:var(--g5);margin-bottom:.75rem;}
+.t-acts{display:flex;gap:.5rem;}
+.t-claim{padding:.4rem .9rem;background:var(--p);color:var(--w);border-radius:var(--rsm);font-family:var(--fh);font-size:.82rem;font-weight:700;}
+.t-later{padding:.4rem .9rem;color:var(--g5);border:1px solid var(--g3);border-radius:var(--rsm);font-family:var(--fh);font-size:.82rem;}
+.t-x{position:absolute;top:.625rem;right:.625rem;width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:4px;color:var(--g4);font-size:.75rem;}
+.t-x:hover{background:var(--g2);}
+@media(max-width:480px){.toast{top:auto;bottom:5.5rem;right:.75rem;left:.75rem;max-width:none;transform:translateY(calc(100% + 2rem));}.toast.on{transform:translateY(0);}}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--light);}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--p),var(--acc));border-radius:var(--rf);}
+
+/* GAROMS-AI SECTION */
+.gai-sec{background:var(--dark);padding:6rem 0;overflow:hidden;}
+.gai-grid{display:grid;grid-template-columns:1fr;gap:4rem;align-items:center;}
+@media(min-width:1024px){.gai-grid{grid-template-columns:1fr 1fr;}}
+.gai-vis{position:relative;display:flex;justify-content:center;}
+.gai-glow{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(0,87,255,.25),transparent 70%);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.gai-card{background:rgba(255,255,255,.03);border:1px solid rgba(0,87,255,.2);border-radius:24px;padding:2.5rem 2rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;position:relative;max-width:380px;width:100%;backdrop-filter:blur(10px);box-shadow:0 24px 80px rgba(0,87,255,.15);}
+.gai-rings{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;}
+.gai-ring{position:absolute;border-radius:50%;border:1px solid rgba(0,87,255,.15);}
+.gai-r1{width:240px;height:240px;animation:gaiSpin 12s linear infinite;}
+.gai-r2{width:310px;height:310px;border-color:rgba(0,212,255,.08);animation:gaiSpin 18s linear infinite reverse;}
+.gai-r3{width:380px;height:380px;border-color:rgba(0,87,255,.05);animation:gaiSpin 24s linear infinite;}
+@keyframes gaiSpin{to{transform:rotate(360deg);}}
+.gai-avatar{position:relative;z-index:1;filter:drop-shadow(0 0 30px rgba(0,87,255,.5));}
+.gai-name{font-family:var(--fh);font-size:1.5rem;font-weight:900;color:var(--w);letter-spacing:-.02em;}
+.gai-status{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.45);}
+.gai-dot{width:8px;height:8px;background:#22C55E;border-radius:50%;animation:pulse 2s infinite;flex-shrink:0;}
+.gai-msgs{width:100%;display:flex;flex-direction:column;gap:.5rem;margin-top:.25rem;}
+.gai-msg-bot{background:rgba(0,87,255,.15);border:1px solid rgba(0,87,255,.2);border-radius:12px 12px 12px 4px;padding:.65rem .9rem;font-size:.78rem;color:rgba(255,255,255,.8);line-height:1.5;align-self:flex-start;max-width:90%;}
+.gai-msg-usr{background:var(--p);border-radius:12px 12px 4px 12px;padding:.55rem .85rem;font-size:.78rem;color:var(--w);font-weight:600;align-self:flex-end;max-width:75%;}
+.gai-float{position:absolute;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:.5rem .9rem;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:.5rem;backdrop-filter:blur(8px);}
+.gai-float span{font-size:1rem;}
+.gai-f1{top:0;left:0;animation:gaiFloat1 4s ease-in-out infinite;}
+.gai-f2{bottom:1rem;right:0;animation:gaiFloat1 4s ease-in-out infinite 1.5s;}
+@keyframes gaiFloat1{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+.gai-feats{display:flex;flex-direction:column;gap:1.1rem;margin-top:.5rem;}
+.gai-feat{display:flex;align-items:flex-start;gap:1rem;}
+.gai-feat-ico{width:40px;height:40px;background:rgba(0,87,255,.15);border:1px solid rgba(0,87,255,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.gai-feat-t{font-family:var(--fh);font-size:.9rem;font-weight:700;color:var(--w);margin-bottom:.2rem;}
+.gai-feat-d{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.55;}
+.gai-info{display:flex;flex-direction:column;gap:1.5rem;}
+
+/* NIGHT SECTION */
+.night-sec{position:relative;padding:8rem 0;overflow:hidden;}
+.night-bg{position:absolute;inset:0;z-index:0;}
+.night-bg img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.night-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,.92) 0%,rgba(0,40,120,.85) 50%,rgba(10,22,40,.95) 100%);}
+.night-in{position:relative;z-index:1;}
+.night-content{max-width:800px;margin:0 auto;text-align:center;}
+.night-h{font-family:var(--fh);font-size:clamp(1.8rem,4vw,3.2rem);font-weight:900;color:var(--w);line-height:1.1;letter-spacing:-.03em;margin-bottom:1.25rem;}
+.night-h span{background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.night-sub{font-size:1.05rem;color:rgba(255,255,255,.6);line-height:1.75;max-width:600px;margin:0 auto 2.5rem;}
+.night-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2.5rem;}
+@media(max-width:640px){.night-stats{grid-template-columns:1fr;gap:1rem;}}
+.night-stat{text-align:center;}
+.night-stat-n{font-family:var(--fh);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;background:linear-gradient(135deg,var(--w),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.4rem;}
+.night-stat-l{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.4;}
+
+/* TRANSFORMATION SECTION */
+.transf-sec{background:var(--light);padding:6rem 0;}
+.transf-grid{display:grid;grid-template-columns:1fr;gap:4rem;align-items:center;}
+@media(min-width:1024px){.transf-grid{grid-template-columns:1fr 1fr;}}
+.transf-img-wrap{position:relative;}
+.transf-img-card{border-radius:var(--rlg);overflow:hidden;position:relative;box-shadow:0 24px 60px rgba(0,87,255,.15);}
+.transf-img-card img{width:100%;height:420px;object-fit:cover;display:block;transition:transform .6s ease;}
+.transf-img-card:hover img{transform:scale(1.04);}
+.transf-img-badge{position:absolute;bottom:1.25rem;left:1.25rem;background:rgba(10,22,40,.85);backdrop-filter:blur(12px);border:1px solid rgba(0,87,255,.3);border-radius:var(--r);padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem;font-family:var(--fh);font-size:.8rem;font-weight:700;color:var(--w);}
+.tib-dot{width:8px;height:8px;background:#22C55E;border-radius:50%;animation:pulse 2s infinite;flex-shrink:0;}
+.transf-img-stat{position:absolute;top:1.25rem;right:-1.5rem;background:var(--w);border-radius:var(--r);padding:1rem 1.5rem;box-shadow:0 12px 40px rgba(0,0,0,.12);text-align:center;}
+@media(max-width:1023px){.transf-img-stat{right:1.25rem;}}
+.tis-n{font-family:var(--fh);font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.tis-l{font-size:.72rem;color:var(--g5);line-height:1.4;margin-top:.25rem;max-width:120px;}
+.transf-info{display:flex;flex-direction:column;gap:1.5rem;}
+.transf-list{display:flex;flex-direction:column;gap:1rem;}
+.transf-item{display:flex;align-items:flex-start;gap:.875rem;font-size:.92rem;color:var(--g6);line-height:1.6;}
+.transf-item strong{color:var(--dark);}
+.transf-check{width:22px;height:22px;background:linear-gradient(135deg,var(--p),var(--acc));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--w);font-weight:900;flex-shrink:0;margin-top:.15rem;}
+.transf-note{font-size:.85rem;color:var(--g4);font-style:italic;padding:.75rem 1rem;border-left:3px solid var(--p);background:rgba(0,87,255,.04);border-radius:0 var(--rsm) var(--rsm) 0;}
+
+/* RÉSULTATS RÉELS SECTION */
+.res-sec{position:relative;padding:7rem 0;overflow:hidden;}
+.res-bg{position:absolute;inset:0;z-index:0;}
+.res-bg img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.res-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,40,.96) 0%,rgba(0,40,120,.92) 50%,rgba(10,22,40,.97) 100%);}
+.res-in{position:relative;z-index:1;}
+.res-top{text-align:center;margin-bottom:3rem;}
+.res-h{font-family:var(--fh);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:var(--w);letter-spacing:-.03em;margin-bottom:1rem;}
+.res-sub{font-size:1rem;color:rgba(255,255,255,.55);max-width:560px;margin:0 auto;line-height:1.7;}
+.res-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:3rem;}
+@media(min-width:768px){.res-cards{grid-template-columns:repeat(4,1fr);}}
+.res-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);padding:2rem 1.5rem;text-align:center;transition:var(--ts);}
+.res-card:hover{background:rgba(0,87,255,.1);border-color:rgba(0,87,255,.3);transform:translateY(-4px);}
+.res-card-hl{background:rgba(0,87,255,.12);border-color:rgba(0,87,255,.3);}
+.res-card-n{font-family:var(--fh);font-size:clamp(2.2rem,5vw,3.2rem);font-weight:900;background:linear-gradient(135deg,var(--w),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.5rem;}
+.res-card-l{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.45;margin-bottom:.75rem;}
+.res-card-t{font-size:.68rem;font-weight:700;color:var(--acc);text-transform:uppercase;letter-spacing:.1em;}
+.res-cta{display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center;}
+.res-guarantee{font-size:.82rem;color:rgba(255,255,255,.4);}
+
+</style>
+</head>
+<body>
+<!-- LOADING -->
+<div id="ls" class="ls">
+  <div class="lbg"><span></span><span></span><span></span></div>
+  <div class="lc">
+    <div class="lring-wrap">
+      <div class="lring lring1"></div>
+      <div class="lring lring2"></div>
+      <div class="lring lring3"></div>
+      <div id="ll" class="llogo">
+        <img src="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png" alt="GAROMS-TECH Logo" />
+        <div class="lname"><span class="n">GAROMS</span><span class="t">-TECH</span></div>
+      </div>
+    </div>
+    <div id="ltag" class="ltag">Intelligence Artificielle & Automatisation</div>
+    <div class="lpbar"><div id="lpf" class="lpfill"></div></div>
+    <div id="lpc" class="lpct">0%</div>
+    <button class="lskip" onclick="skip()">Passer</button>
+  </div>
+</div>
+<!-- TOAST -->
+<div id="toast" class="toast" style="display:none;">
+  <div class="toast-in">
+    <div class="t-ico">🎁</div>
+    <div class="t-b">
+      <div class="t-title">Offre Première Collaboration</div>
+      <div class="t-txt">-15% sur votre premier projet GAROMS-TECH. Offre limitée !</div>
+      <div class="t-acts">
+        <button class="t-claim" onclick="claimP()">Réclamer</button>
+        <button class="t-later" onclick="laterP()">Plus tard</button>
+      </div>
+    </div>
+    <button class="t-x" onclick="closeP()">✕</button>
+  </div>
+</div>
+<!-- FLOATING GAROMS-AI -->
+<div class="chat-float">
+  <div class="cf-bubble" id="cfBubble">
+    <div class="cf-bubble-t">Bonjour ! Je suis Garoms-AI 🤖</div>
+    <div class="cf-bubble-s">Posez-moi vos questions, je suis là !</div>
+  </div>
+  <button class="cf-btn" onclick="toggleChat()">
+    🤖
+    <span class="cf-notif">1</span>
+  </button>
+</div>
+<div class="cf-panel" id="cfPanel">
+  <div class="cfp-hdr">
+    <div class="cfp-av">🤖</div>
+    <div><div class="cfp-title">Garoms-AI</div><div class="cfp-sub"><span style="display:inline-block;width:7px;height:7px;background:#22C55E;border-radius:50%;margin-right:4px;"></span>En ligne 24/7</div></div>
+    <button class="cfp-x" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="cfp-msgs" id="cfMsgs">
+    <div class="msg bot">Bonjour ! Je suis Garoms-AI 👋 Comment puis-je vous aider aujourd'hui ?</div>
+  </div>
+  <div class="cfp-typing" id="cfTyping"><span></span><span></span><span></span></div>
+  <div class="cfp-inp">
+    <input class="cfp-inpf" id="cfInput" type="text" placeholder="Votre message..." onkeydown="if(event.key==='Enter')sendAI()" />
+    <button class="cfp-send" onclick="sendAI()">➤</button>
+  </div>
+  <div class="cfp-footer">
+    <div class="cfp-disclaimer">Garoms AI est un agent GAROMS-TECH. Si vous ne trouvez pas la réponse souhaitée, <a href="#contact" onclick="toggleChat()">contactez-nous via le formulaire</a> ou écrivez à <a href="mailto:infogaromstech@gmail.com">infogaromstech@gmail.com</a></div>
+  </div>
+</div>
+<div id="site" style="display:none;">
+<!-- HEADER -->
+<header id="hdr" class="hdr">
+  <div class="c hdrin">
+    <a href="/" class="logo">
+      <img src="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png" alt="GAROMS-TECH" />
+      <span class="logo-t">GAROMS<span>-TECH</span></span>
+    </a>
+    <nav class="hnav">
+      <a href="#apropos">À Propos</a>
+      <a href="#services">Services</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#contact">Contact</a>
+      <a href="ambassadeur.html">Ambassadeur</a>
+    </nav>
+    <div class="hacts">
+      <a href="#contact" class="btn btnp hcta">Démarrer un projet →</a>
+      <button class="hmb" id="hmb" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <nav>
+      <a href="#apropos" onclick="closeMenu()">À Propos</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#pourquoi" onclick="closeMenu()">Pourquoi nous</a>
+      <a href="#equipe" onclick="closeMenu()">Équipe</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a href="ambassadeur.html" onclick="closeMenu()">Ambassadeur</a>
+    </nav>
+    <a href="#contact" class="btn btnp" onclick="closeMenu()">Démarrer un projet →</a>
+  </div>
+</header>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-canvas" id="hcanvas"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-line"></div>
+  <div class="c hero-in">
+    <div class="hero-c">
+      <div class="hero-eyebrow">Depuis 2023 — IA & Automatisation</div>
+      <h1 class="hero-h1" id="hh1">Votre Business,<br><span class="line2">Automatisé par l'IA</span></h1>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">GAROMS-TECH crée des systèmes intelligents qui travaillent 24/7 à votre place. Chatbots, agents IA, automatisation, sites web et marketing digital.</p>
+      <div class="hero-btns" data-aos="fade-up" data-aos-delay="200">
+        <a href="#services" class="btn btnp">Découvrir nos services</a>
+        <a href="#demo" class="btn btno">Voir l'IA en action →</a>
+      </div>
+      <div class="hero-tags" data-aos="fade-up" data-aos-delay="280">
+        <span class="htag">⚡ Automatisation</span><span class="htag">🤖 Agents IA</span><span class="htag">💻 Web & Apps</span><span class="htag">📈 Marketing Digital</span><span class="htag">🔧 n8n / Make</span>
+      </div>
+      <div class="hero-metrics" data-aos="fade-up" data-aos-delay="340">
+        <div class="hm"><div class="hm-n">50+</div><div class="hm-l">Clients</div></div>
+        <div class="hm"><div class="hm-n">24/7</div><div class="hm-l">Disponibilité</div></div>
+        <div class="hm"><div class="hm-n">30j</div><div class="hm-l">1ers résultats</div></div>
+      </div>
+    </div>
+    <div class="hero-vis" data-aos="fade-left" data-aos-delay="150">
+      <div class="hero-screen">
+        <div class="hs-header">
+          <div class="hs-dots"><div class="hs-dot hs-d1"></div><div class="hs-dot hs-d2"></div><div class="hs-dot hs-d3"></div></div>
+          <div class="hs-title">GAROMS-TECH — Dashboard IA</div>
+        </div>
+        <div class="hs-body">
+          <div class="hs-row"><div class="hs-ico blue">🤖</div><div class="hs-text"><div class="hs-label">Agent IA actif</div><div class="hs-val">Garoms-AI — Online</div><div class="hs-bar"><div class="hs-fill hs-fillp" style="width:78%;"></div></div></div></div>
+          <div class="hs-row"><div class="hs-ico grn">⚡</div><div class="hs-text"><div class="hs-label">Automatisations actives</div><div class="hs-val">12 workflows — En cours</div><div class="hs-bar"><div class="hs-fill hs-fills" style="width:92%;"></div></div></div></div>
+          <div class="hs-row"><div class="hs-ico acc">📊</div><div class="hs-text"><div class="hs-label">Messages traités aujourd'hui</div><div class="hs-val">247 réponses automatiques</div></div></div>
+          <div class="hs-badge"><div class="hs-pulse"></div>Système opérationnel 24/7</div>
+        </div>
+      </div>
+      <div class="hfb hfb1"><div class="hfb-ico">💬</div><span>+47 leads qualifiés</span></div>
+      <div class="hfb hfb2"><div class="hfb-ico g">✅</div><span>ROI +340% ce mois</span></div>
+    </div>
+  </div>
+</section>
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="mq-track">
+    <div class="mq-set"><span class="hl">⚡ n8n</span><span>🔧 Make</span><span>🔗 Zapier</span><span class="hl">🤖 OpenAI</span><span class="hl">🧠 Claude</span><span>⚛️ Cursor</span><span>🗄️ Supabase</span><span class="hl">🧠 Groq AI</span><span>🚀 Netlify</span><span>📊 Google Analytics</span><span>💬 WhatsApp API</span><span>🐙 GitHub</span><span>📱 Meta Ads</span><span>🔍 Google Ads</span><span>📝 Notion</span><span>💳 Stripe</span><span>⚡ Copilot</span><span>🎨 Figma</span></div>
+    <div class="mq-set" aria-hidden="true"><span class="hl">⚡ n8n</span><span>🔧 Make</span><span>🔗 Zapier</span><span class="hl">🤖 OpenAI</span><span class="hl">🧠 Claude</span><span>⚛️ Cursor</span><span>🗄️ Supabase</span><span class="hl">🧠 Groq AI</span><span>🚀 Netlify</span><span>📊 Google Analytics</span><span>💬 WhatsApp API</span><span>🐙 GitHub</span><span>📱 Meta Ads</span><span>🔍 Google Ads</span><span>📝 Notion</span><span>💳 Stripe</span><span>⚡ Copilot</span><span>🎨 Figma</span></div>
+  </div>
+</div>
+<!-- STATS -->
+<div class="stats">
+  <div class="c">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="0"><div class="stat-i">🚀</div><div class="stat-n" data-count="50">0+</div><div class="stat-l">Projets livrés</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="80"><div class="stat-i">⚡</div><div class="stat-n" data-count="95">0%</div><div class="stat-l">Satisfaction client</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="160"><div class="stat-i">🤖</div><div class="stat-n" data-count="247">0</div><div class="stat-l">Réponses IA / jour</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="240"><div class="stat-i">🌍</div><div class="stat-n">24/7</div><div class="stat-l">Disponibilité mondiale</div></div>
+    </div>
+  </div>
+</div>
+<!-- PENDANT QUE VOUS DORMEZ -->
+<section class="night-sec">
+  <div class="night-bg">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80" alt="Business automatisé" loading="lazy" />
+    <div class="night-overlay"></div>
+  </div>
+  <div class="c night-in">
+    <div class="night-content" data-aos="fade-up">
+      <div class="sbadge" style="background:rgba(0,212,255,.1);color:var(--acc);border-color:rgba(0,212,255,.25);margin-bottom:1.5rem;">⏰ Pendant que vous dormez</div>
+      <h2 class="night-h">Vos concurrents perdent des clients à 2h du matin.<br><span>Vous, vous les capturez.</span></h2>
+      <p class="night-sub">90% des décisions d'achat se font en dehors des heures de bureau. Sans automatisation, ce sont des milliers d'euros qui partent chez vos concurrents — chaque nuit.</p>
+      <div class="night-stats">
+        <div class="night-stat"><div class="night-stat-n">73%</div><div class="night-stat-l">des prospects n'attendent pas le lendemain</div></div>
+        <div class="night-stat"><div class="night-stat-n">×3</div><div class="night-stat-l">de conversion avec réponse en moins de 5 min</div></div>
+        <div class="night-stat"><div class="night-stat-n">24/7</div><div class="night-stat-l">votre business actif sans vous</div></div>
+      </div>
+      <a href="#contact" class="btn btnp" style="font-size:1rem;padding:1rem 2.5rem;box-shadow:0 8px 32px rgba(0,87,255,.4);">Automatiser mon business maintenant →</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMENT CA MARCHE -->
+<section class="hiw">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge">🗺️ Notre processus</div>
+      <h2 class="stitle">Comment ça marche ?</h2>
+      <p class="ssub">De votre premier message à la livraison de votre solution — simple, transparent, rapide.</p>
+    </div>
+    <div class="hiw-steps" data-aos="fade-up">
+      <div class="hiw-step">
+        <div class="hiw-nb">1</div>
+        <div class="hiw-ico">📞</div>
+        <div class="hiw-t">Appel découverte</div>
+        <div class="hiw-d">30 minutes gratuites pour analyser votre business et identifier les opportunités IA.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-nb">2</div>
+        <div class="hiw-ico">📋</div>
+        <div class="hiw-t">Proposition sur mesure</div>
+        <div class="hiw-d">Plan clair avec livrables, délais et investissement. Aucune surprise.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-nb">3</div>
+        <div class="hiw-ico">⚙️</div>
+        <div class="hiw-t">Construction & Tests</div>
+        <div class="hiw-d">Notre équipe construit votre solution avec des points d'avancement réguliers.</div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-nb">4</div>
+        <div class="hiw-ico">🚀</div>
+        <div class="hiw-t">Livraison & Suivi</div>
+        <div class="hiw-d">Mise en ligne + formation incluse + support continu pour que tout fonctionne parfaitement.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- A PROPOS -->
+<section id="apropos" class="ap">
+  <div class="c">
+    <div class="ap-grid">
+      <div data-aos="fade-right">
+        <div class="ap-kpi">
+          <div class="ap-k"><div class="ap-kn">50+</div><div class="ap-kl">Clients servis</div></div>
+          <div class="ap-k"><div class="ap-kn">3+</div><div class="ap-kl">Ans d'exp.</div></div>
+          <div class="ap-k"><div class="ap-kn">95%</div><div class="ap-kl">Satisfaction</div></div>
+        </div>
+        <div class="ap-quote-box">
+          <div class="ap-qt">«Notre mission est simple : transformer chaque entreprise en une machine de croissance autonome grâce à l'IA. Ce qui prenait 8 heures de travail ne prend maintenant que 8 minutes.»</div>
+          <div class="ap-qa">— GURU Gédéon, CEO & Fondateur de GAROMS-TECH</div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="sbadge">🏢 Qui sommes-nous</div>
+        <h2 class="stitle">Une force de transformation digitale sans frontières</h2>
+        <p class="ssub" style="max-width:100%;margin-bottom:1.75rem;">Fondée en 2023, GAROMS-TECH est une agence spécialisée en IA et automatisation. Nous accompagnons des entrepreneurs et entreprises du monde entier, 100% en ligne, avec une approche concrète et orientée résultats.</p>
+        <div class="ap-pillar-row">
+          <div class="ap-pi"><div class="ap-pi-i">🤖</div><div><div class="ap-pi-t">Automatisation & Agents IA</div><div class="ap-pi-d">Systèmes intelligents qui remplacent les processus manuels et travaillent sans interruption.</div></div></div>
+          <div class="ap-pi"><div class="ap-pi-i">💻</div><div><div class="ap-pi-t">Développement Web & Apps</div><div class="ap-pi-d">Solutions digitales sur mesure, performantes et orientées conversion.</div></div></div>
+          <div class="ap-pi"><div class="ap-pi-i">📈</div><div><div class="ap-pi-t">Marketing Digital & Croissance</div><div class="ap-pi-d">Stratégies publicitaires avec ROI mesurable et prévisible.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TRANSFORMATION SECTION -->
+<section class="transf-sec">
+  <div class="c">
+    <div class="transf-grid">
+      <div class="transf-img-wrap" data-aos="fade-right">
+        <div class="transf-img-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Succès business" loading="lazy" />
+          <div class="transf-img-badge">
+            <div class="tib-dot"></div>
+            <span>Votre business dans 30 jours</span>
+          </div>
+        </div>
+        <div class="transf-img-stat" data-aos="fade-up" data-aos-delay="150">
+          <div class="tis-n">+340%</div>
+          <div class="tis-l">ROI moyen de nos clients<br>après 30 jours</div>
+        </div>
+      </div>
+      <div class="transf-info" data-aos="fade-left">
+        <div class="sbadge">✨ La transformation</div>
+        <h2 class="stitle">Imaginez demain matin…</h2>
+        <div class="transf-list">
+          <div class="transf-item">
+            <div class="transf-check">✓</div>
+            <div><strong>Vous vous réveillez</strong> avec 8 nouveaux leads qualifiés dans votre boîte mail — capturés pendant votre sommeil.</div>
+          </div>
+          <div class="transf-item">
+            <div class="transf-check">✓</div>
+            <div><strong>Vos relances clients</strong> sont parties automatiquement. Vos devis aussi. Sans que vous ayez levé le petit doigt.</div>
+          </div>
+          <div class="transf-item">
+            <div class="transf-check">✓</div>
+            <div><strong>Votre équipe</strong> se concentre sur ce qui compte vraiment — stratégie et clients — plus sur les tâches répétitives.</div>
+          </div>
+          <div class="transf-item">
+            <div class="transf-check">✓</div>
+            <div><strong>Votre chiffre d'affaires</strong> monte chaque mois, de façon prévisible, pendant que vos systèmes travaillent pour vous.</div>
+          </div>
+        </div>
+        <p class="transf-note">Ce n'est pas une promesse. C'est le quotidien de nos clients après 30 jours avec GAROMS-TECH.</p>
+        <a href="#contact" class="btn btnp">Je veux ce résultat →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="svc">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge" style="background:rgba(0,212,255,.08);color:var(--acc);border-color:rgba(0,212,255,.2);">⚙️ Nos Solutions</div>
+      <h2 class="stitle" style="color:var(--w);">Ce que nous construisons pour vous</h2>
+      <p class="ssub" style="color:rgba(255,255,255,.5);">Chaque solution est conçue pour un objectif concret : vous faire gagner du temps, des clients et de l'argent.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="scard" data-aos="fade-up" data-aos-delay="0">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs1)"/><defs><linearGradient id="avs1" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs><rect x="14" y="19" width="28" height="20" rx="6" fill="rgba(255,255,255,0.2)"/><circle cx="22" cy="28" r="3.5" fill="white"/><circle cx="34" cy="28" r="3.5" fill="white"/><rect x="21" y="33" width="14" height="3" rx="1.5" fill="rgba(255,255,255,0.7)"/><line x1="28" y1="19" x2="28" y2="14" stroke="rgba(255,255,255,0.8)" stroke-width="2.5" stroke-linecap="round"/><circle cx="28" cy="12" r="2.5" fill="rgba(255,255,255,0.9)"/><rect x="10" y="23" width="4" height="8" rx="2" fill="rgba(255,255,255,0.25)"/><rect x="42" y="23" width="4" height="8" rx="2" fill="rgba(255,255,255,0.25)"/></svg></div>
+        <div class="st">Chatbot IA 24/7</div>
+        <div class="sd">Un agent conversationnel formé sur votre business qui répond, qualifie et convertit vos prospects à toute heure.</div>
+        <div class="s-delay">⏱ Livraison : 3 à 7 jours</div>
+        <div class="svc-ba"><div class="sba red"><div class="sba-label">❌ Sans ça</div><div class="sba-txt">Client à 2h du matin, personne ne répond. Vente perdue au concurrent.</div></div><div class="sba grn"><div class="sba-label">✅ Avec ça</div><div class="sba-txt">100% des messages reçoivent une réponse. Taux de conversion ×3.</div></div></div>
+      </div>
+      <div class="scard" data-aos="fade-up" data-aos-delay="80">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs2)"/><defs><linearGradient id="avs2" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#0057FF"/></linearGradient></defs><circle cx="28" cy="28" r="11" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><rect x="26" y="12" width="4" height="6" rx="2" fill="rgba(255,255,255,0.6)"/><rect x="26" y="38" width="4" height="6" rx="2" fill="rgba(255,255,255,0.6)"/><rect x="12" y="26" width="6" height="4" rx="2" fill="rgba(255,255,255,0.6)"/><rect x="38" y="26" width="6" height="4" rx="2" fill="rgba(255,255,255,0.6)"/><path d="M30 20 L25 28 H29 L24 36 L34 26 H30 L33 20 Z" fill="white"/></svg></div>
+        <div class="st">Automatisation de processus</div>
+        <div class="sd">Workflows n8n/Make qui connectent vos outils, éliminent les tâches répétitives et font tourner votre opération en fond.</div>
+        <div class="s-delay">⏱ Simple : 1–2 sem. | Avancé : 3–5 sem.</div>
+        <div class="svc-ba"><div class="sba red"><div class="sba-label">❌ Sans ça</div><div class="sba-txt">3-4h perdues/jour sur des tâches répétitives. Équipe épuisée et ralentie.</div></div><div class="sba grn"><div class="sba-label">✅ Avec ça</div><div class="sba-txt">80% des processus automatisés. Équipe 100% focalisée sur la stratégie.</div></div></div>
+      </div>
+      <div class="scard" data-aos="fade-up" data-aos-delay="160">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs3)"/><defs><linearGradient id="avs3" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#0A1628"/><stop offset="1" stop-color="#0057FF"/></linearGradient></defs><rect x="10" y="16" width="36" height="24" rx="4" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><rect x="10" y="16" width="36" height="7" rx="4" fill="rgba(255,255,255,0.12)"/><circle cx="16" cy="19.5" r="2" fill="#FF5F56"/><circle cx="22" cy="19.5" r="2" fill="#FFBD2E"/><circle cx="28" cy="19.5" r="2" fill="#27C93F"/><path d="M17 30 L22 27 L17 24" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="25" y1="30" x2="37" y2="30" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/><line x1="25" y1="26" x2="33" y2="26" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round"/><rect x="16" y="43" width="24" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/><rect x="24" y="40" width="8" height="3" fill="rgba(255,255,255,0.1)"/></svg></div>
+        <div class="st">Site Web & Application</div>
+        <div class="sd">Sites haute performance, landing pages qui convertissent et applications web/mobile conçues pour la croissance.</div>
+        <div class="s-delay">⏱ Site vitrine : 1–3 sem. | App : 4–8 sem.</div>
+        <div class="svc-ba"><div class="sba red"><div class="sba-label">❌ Sans ça</div><div class="sba-txt">70% des visiteurs quittent un site non professionnel en moins de 3 secondes.</div></div><div class="sba grn"><div class="sba-label">✅ Avec ça</div><div class="sba-txt">Site rapide, crédible, optimisé SEO. Visiteurs → clients qualifiés.</div></div></div>
+      </div>
+      <div class="scard" data-aos="fade-up" data-aos-delay="0">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs4)"/><defs><linearGradient id="avs4" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#22C55E"/></linearGradient></defs><rect x="12" y="36" width="8" height="8" rx="2" fill="rgba(255,255,255,0.3)"/><rect x="24" y="28" width="8" height="16" rx="2" fill="rgba(255,255,255,0.5)"/><rect x="36" y="19" width="8" height="25" rx="2" fill="white"/><path d="M13 30 L22 22 L30 26 L43 14" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="43" cy="14" r="3" fill="white"/></svg></div>
+        <div class="st">Marketing Digital & Publicité</div>
+        <div class="sd">Campagnes Meta Ads, Google Ads et stratégies organiques pour générer des leads qualifiés en continu.</div>
+        <div class="s-delay">⏱ Mise en place : 1–2 semaines</div>
+        <div class="svc-ba"><div class="sba red"><div class="sba-label">❌ Sans ça</div><div class="sba-txt">Invisible en ligne. Vos concurrents capturent les clients qui vous cherchent.</div></div><div class="sba grn"><div class="sba-label">✅ Avec ça</div><div class="sba-txt">Présence forte, flux constant de leads, ROI mesurable chaque semaine.</div></div></div>
+      </div>
+      <div class="scard" data-aos="fade-up" data-aos-delay="80">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs5)"/><defs><linearGradient id="avs5" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><circle cx="28" cy="21" r="9" fill="rgba(255,255,255,0.13)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><circle cx="28" cy="21" r="4" fill="rgba(255,255,255,0.25)"/><circle cx="28" cy="21" r="2" fill="white"/><circle cx="19" cy="36" r="4" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><circle cx="37" cy="36" r="4" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><line x1="23" y1="29" x2="19" y2="32" stroke="rgba(0,212,255,0.6)" stroke-width="1.5"/><line x1="33" y1="29" x2="37" y2="32" stroke="rgba(0,212,255,0.6)" stroke-width="1.5"/><circle cx="19" cy="36" r="2" fill="#00D4FF"/><circle cx="37" cy="36" r="2" fill="#00D4FF"/></svg></div>
+        <div class="st">Agent IA Personnalisé</div>
+        <div class="sd">IA entraînée sur vos données qui gère support, ventes, administration — comme un employé qui ne dort jamais.</div>
+        <div class="s-delay">⏱ Livraison : 3–8 semaines selon complexité</div>
+        <div class="svc-ba"><div class="sba red"><div class="sba-label">❌ Sans ça</div><div class="sba-txt">Plusieurs employés pour des tâches automatisables. Coût élevé, erreurs humaines.</div></div><div class="sba grn"><div class="sba-label">✅ Avec ça</div><div class="sba-txt">1 IA disponible 24h/24, sans congé ni fatigue, à une fraction du coût.</div></div></div>
+      </div>
+      <div class="scard star" data-aos="fade-up" data-aos-delay="160">
+        <div class="svc-avt"><svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><rect width="56" height="56" rx="16" fill="url(#avs6)"/><defs><linearGradient id="avs6" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs><path d="M28 11 C28 11 37 16 37 27 L37 33 L28 39 L19 33 L19 27 C19 16 28 11 28 11Z" fill="rgba(255,255,255,0.22)" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/><circle cx="28" cy="24" r="4" fill="rgba(255,255,255,0.35)"/><circle cx="28" cy="24" r="2" fill="white"/><path d="M19 31 L13 35 L15 28 Z" fill="rgba(255,255,255,0.28)"/><path d="M37 31 L43 35 L41 28 Z" fill="rgba(255,255,255,0.28)"/><path d="M23 39 L21 46 L28 43 L35 46 L33 39" fill="rgba(255,165,0,0.55)"/><path d="M25 39 L24 44 L28 42 L32 44 L31 39" fill="rgba(255,220,0,0.75)"/></svg></div>
+        <div class="st">Pack Croissance Complet</div>
+        <div class="sd">IA + Site + Automatisation + Marketing. La transformation digitale complète de votre business.</div>
+        <div class="s-delay">⏱ Premiers livrables dès la 1ère semaine</div>
+        <div style="background:rgba(0,87,255,.15);border:1px solid rgba(0,87,255,.3);border-radius:8px;padding:.875rem;margin-top:.25rem;">
+          <div style="font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--acc);margin-bottom:.4rem;">🏆 OFFRE PHARE — Transformation complète</div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.55;">Premiers livrables dès la 1ère semaine. Déploiement complet en 4 à 8 semaines. Remboursement intégral si non satisfait sous 30 jours.</div>
+        </div>
+        <a href="#contact" class="btn btnp" style="width:100%;justify-content:center;margin-top:.5rem;">Démarrer ce pack →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- POURQUOI -->
+<section id="pourquoi" class="pq">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge">🏆 Notre valeur</div>
+      <h2 class="stitle">Pourquoi choisir GAROMS-TECH ?</h2>
+      <p class="ssub">Pas de promesses vides. Voici ce qui nous différencie concrètement de toute autre agence.</p>
+    </div>
+    <div class="pq-list">
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">01</div><div class="pq-body"><div class="pq-t">Résultats concrets dès la 1ère semaine</div><div class="pq-d">Nous livrons vos premiers systèmes opérationnels rapidement — pas dans 6 mois. Les délais varient selon le service, mais vous voyez de l'avancement immédiat.</div></div></div>
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">02</div><div class="pq-body"><div class="pq-t">Pas de jargon, que des chiffres</div><div class="pq-d">Leads générés, heures économisées, revenus additionnels. On parle ROI, pas technologie abstraite.</div></div></div>
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">03</div><div class="pq-body"><div class="pq-t">Solutions 100% sur mesure</div><div class="pq-d">Chaque système est conçu spécifiquement pour votre business. Zéro template générique, que du sur mesure.</div></div></div>
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">04</div><div class="pq-body"><div class="pq-t">Accompagnement continu inclus</div><div class="pq-d">Nous ne disparaissons pas après livraison. Support, mises à jour, évolution : on grandit ensemble.</div></div></div>
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">05</div><div class="pq-body"><div class="pq-t">Technologies de dernière génération</div><div class="pq-d">OpenAI, Claude, n8n, Supabase, Groq — nous maîtrisons les outils les plus performants du marché.</div></div></div>
+      <div class="pq-item" data-aos="fade-up"><div class="pq-num">06</div><div class="pq-body"><div class="pq-t">Service mondial, 100% en ligne</div><div class="pq-d">Nous accompagnons des entrepreneurs partout dans le monde. Votre localisation n'est pas un obstacle — tout se fait à distance.</div></div></div>
+    </div>
+    <div class="pq-vs" data-aos="fade-up">
+      <div class="pq-vside dark"><div class="pq-vs-t">😩 Sans GAROMS-TECH</div><div class="pq-vlist"><div class="pq-vi"><span>❌</span>Vous répondez manuellement à chaque client</div><div class="pq-vi"><span>❌</span>Des heures perdues sur des tâches répétitives</div><div class="pq-vi"><span>❌</span>Site peu visible, très peu de leads entrants</div><div class="pq-vi"><span>❌</span>Votre business s'arrête quand vous dormez</div><div class="pq-vi"><span>❌</span>Vos concurrents avancent plus vite que vous</div></div></div>
+      <div class="pq-vside lite"><div class="pq-vs-t">🚀 Avec GAROMS-TECH</div><div class="pq-vlist"><div class="pq-vi"><span>✅</span>Votre IA répond à tous vos clients 24h/24</div><div class="pq-vi"><span>✅</span>Les workflows automatiques gèrent tout</div><div class="pq-vi"><span>✅</span>Leads qualifiés qui arrivent en continu</div><div class="pq-vi"><span>✅</span>Votre business tourne pendant votre sommeil</div><div class="pq-vi"><span>✅</span>Vous prenez une longueur d'avance décisive</div></div></div>
+    </div>
+    <div class="pq-cta" data-aos="fade-up">
+      <div class="pq-cta-t">Prêt à passer à l'ère de l'IA ?</div>
+      <div class="pq-cta-s">Prenez 30 minutes avec notre équipe. Nous analysons votre business et vous disons exactement ce que l'IA peut faire pour vous.</div>
+      <div class="pq-cta-free">🟢 Appel stratégique GRATUIT — 30 minutes — Sans engagement</div>
+      <div class="pq-cta-btns">
+        <a href="https://wa.me/50943111054" target="_blank" rel="noopener" class="btn btnwp">💬 Prendre contact sur WhatsApp →</a>
+        <a href="#contact" class="btn btno">Envoyer un message</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DEMO AGENT -->
+<section id="demo" class="demo">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="demo-tag">🌟 Démonstration concrète</div>
+      <h2 class="stitle" style="color:var(--w);">Voyez comment un agent IA planifie<br>une réservation hôtelière</h2>
+      <p class="ssub" style="color:rgba(255,255,255,.5);">Un exemple réel de ce que nous construisons pour nos clients. Cet agent gère tout le processus sans intervention humaine.</p>
+    </div>
+    <div class="demo-grid">
+      <div data-aos="fade-right">
+        <p class="ssub" style="color:rgba(255,255,255,.6);margin-bottom:1.75rem;">Un hôtel nous a confié son service réservation. L'agent IA <strong style="color:var(--w);">gère l'intégralité du processus</strong> : qualification, disponibilités, tarifs, confirmation et rappel automatique.</p>
+        <div class="demo-points">
+          <div class="dp"><div class="dp-ic">💬</div><div class="dp-t"><strong>Comprend le contexte</strong> : dates, nombre de personnes, préférences</div></div>
+          <div class="dp"><div class="dp-ic">📊</div><div class="dp-t"><strong>Vérifie les disponibilités</strong> en temps réel dans votre système</div></div>
+          <div class="dp"><div class="dp-ic">💳</div><div class="dp-t"><strong>Calcule les tarifs</strong>, propose des upgrades et confirme</div></div>
+          <div class="dp"><div class="dp-ic">📧</div><div class="dp-t"><strong>Envoie la confirmation</strong> par email ou WhatsApp automatiquement</div></div>
+          <div class="dp"><div class="dp-ic">🔔</div><div class="dp-t"><strong>Rappel automatique</strong> 48h avant l'arrivée du client</div></div>
+        </div>
+        <div class="demo-note"><strong>Note :</strong> Cet exemple est pour un hôtel, mais nous construisons le même système pour n'importe quel business : restaurant, clinique, cabinet, e-commerce, B2B...</div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="chat-ui">
+          <div class="cui-bar"><div class="cui-dots"><div class="cui-dot cui-d1"></div><div class="cui-dot cui-d2"></div><div class="cui-dot cui-d3"></div></div><span class="cui-title">Hôtel Prestige — Assistant IA</span></div>
+          <div class="cui-hdr"><div class="cui-av">🏨</div><div><div class="cui-name">Hôtel Prestige — IA</div><div class="cui-biz"><span class="cui-online"></span>Réception virtuelle 24/7</div></div></div>
+          <div class="cui-body" id="chatDemo">
+            <div class="msg bot">Bonjour et bienvenue à l'Hôtel Prestige ! Comment puis-je vous aider ? 🏨</div>
+            <div class="msg usr">Bonjour, je voudrais réserver pour 2 personnes</div>
+            <div class="msg bot">Avec plaisir ! Pour quelles dates ? Et quelle chambre : standard, déluxe ou suite ?</div>
+            <div class="msg usr">Du 20 au 23 juin, chambre déluxe si possible</div>
+            <div class="msg sys">⏳ Vérification des disponibilités...</div>
+            <div class="msg bot">✅ La Déluxe vue mer est disponible ! 3 nuits × 185 USD = <strong>555 USD</strong>. Je confirme ?</div>
+            <div class="msg usr">Oui parfait !</div>
+            <div class="msg bot">🎉 Réservé ! Confirmation envoyée par email. Rappel automatique 48h avant. À bientôt !</div>
+          </div>
+          <div class="cui-inp"><input class="cui-inpf" type="text" placeholder="Essayez un message..." id="demoInput" onkeydown="if(event.key==='Enter')sendDemo()" /><button class="cui-send" onclick="sendDemo()">➤</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- EQUIPE -->
+<section id="equipe" class="eq">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge">👥 Notre équipe</div>
+      <h2 class="stitle">Le pilote derrière GAROMS-TECH</h2>
+      <p class="ssub">Une expertise pointue au cœur, renforcée par des partenaires spécialisés selon chaque projet.</p>
+    </div>
+    <div class="eq-grid">
+      <div class="eq-card ceo" data-aos="fade-up" data-aos-delay="0">
+        <div class="eq-photo"><img src="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/70d4cae8-9e6c-401a-ba7f-47f609581db1.png" alt="GURU Gédéon" loading="lazy" onerror="this.parentElement.innerHTML='<div style=width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#0057FF,#00D4FF);display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1.25rem;>👨‍💼</div>'" /></div>
+        <div class="eq-name">GURU Gédéon</div>
+        <div class="eq-role">CEO & Fondateur</div>
+        <div class="eq-desc">Fondateur de GAROMS-TECH, GURU Gédéon planifie la stratégie, analyse les besoins réels de chaque client et pilote chaque projet de A à Z — avec une obsession : des résultats concrets et mesurables.</div>
+        <div class="eq-skills"><span class="eq-skill">Vision & Leadership</span><span class="eq-skill">Stratégie IA</span><span class="eq-skill">Analyse des besoins</span><span class="eq-skill">Livraison de résultats</span><span class="eq-skill">Automatisation</span></div>
+      </div>
+      <div class="eq-card partner-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="partner-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+            <rect width="80" height="80" rx="20" fill="url(#pk1)"/>
+            <defs><linearGradient id="pk1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs>
+            <rect x="18" y="28" width="44" height="28" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+            <rect x="18" y="28" width="44" height="10" rx="8" fill="rgba(255,255,255,0.18)"/>
+            <circle cx="26" cy="33" r="3" fill="#FF5F56"/><circle cx="34" cy="33" r="3" fill="#FFBD2E"/><circle cx="42" cy="33" r="3" fill="#27C93F"/>
+            <rect x="25" y="45" width="30" height="3" rx="1.5" fill="rgba(255,255,255,0.5)"/>
+            <rect x="25" y="51" width="20" height="2.5" rx="1.25" fill="rgba(255,255,255,0.3)"/>
+            <path d="M52 22 C52 22 58 25 58 32" stroke="rgba(0,212,255,0.6)" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="58" cy="20" r="5" fill="rgba(0,212,255,0.2)" stroke="rgba(0,212,255,0.5)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="partner-badge">Réseau Partenaire</div>
+        <div class="eq-name">Expert Marketing Digital</div>
+        <div class="eq-role">Partenaire Spécialisé</div>
+        <div class="eq-desc">Partenaire expert en acquisition client, campagnes Meta & Google Ads et stratégies de croissance. Mobilisé sur vos projets selon les besoins spécifiques de votre business.</div>
+        <div class="eq-skills"><span class="eq-skill">Meta Ads</span><span class="eq-skill">Google Ads</span><span class="eq-skill">SEO/SEA</span><span class="eq-skill">Funnel Marketing</span></div>
+      </div>
+      <div class="eq-card partner-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="partner-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+            <rect width="80" height="80" rx="20" fill="url(#pk2)"/>
+            <defs><linearGradient id="pk2" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#0057FF"/></linearGradient></defs>
+            <circle cx="40" cy="40" r="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+            <path d="M40 26 L40 18" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M40 54 L40 62" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M26 40 L18 40" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M54 40 L62 40" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M43 33 L37 40 L41 40 L35 48 L49 38 L45 38 L49 33 Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="partner-badge">Réseau Partenaire</div>
+        <div class="eq-name">Expert Automatisation</div>
+        <div class="eq-role">Partenaire Spécialisé</div>
+        <div class="eq-desc">Partenaire expert en workflows d'automatisation avancés et intégrations système. Disponible pour vos projets complexes nécessitant une expertise technique approfondie.</div>
+        <div class="eq-skills"><span class="eq-skill">n8n</span><span class="eq-skill">Make</span><span class="eq-skill">API REST</span><span class="eq-skill">Intégrations</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GAROMS-AI SECTION -->
+<section id="garoms-ai" class="gai-sec">
+  <div class="c">
+    <div class="gai-grid">
+      <div class="gai-vis" data-aos="fade-right">
+        <div class="gai-glow"></div>
+        <div class="gai-card">
+          <div class="gai-rings">
+            <div class="gai-ring gai-r1"></div>
+            <div class="gai-ring gai-r2"></div>
+            <div class="gai-ring gai-r3"></div>
+          </div>
+          <div class="gai-avatar">
+            <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+              <defs>
+                <radialGradient id="gai-bg" cx="50%" cy="50%"><stop offset="0%" stop-color="rgba(0,87,255,0.25)"/><stop offset="100%" stop-color="rgba(0,87,255,0)"/></radialGradient>
+                <linearGradient id="gai-body" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse"><stop stop-color="#0057FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient>
+              </defs>
+              <circle cx="80" cy="80" r="78" fill="url(#gai-bg)" stroke="rgba(0,87,255,0.25)" stroke-width="1"/>
+              <rect x="38" y="48" width="84" height="68" rx="28" fill="url(#gai-body)" opacity="0.9"/>
+              <rect x="55" y="68" width="18" height="12" rx="6" fill="white" opacity="0.95"/>
+              <rect x="87" y="68" width="18" height="12" rx="6" fill="white" opacity="0.95"/>
+              <circle cx="64" cy="74" r="4" fill="#0A1628"/><circle cx="96" cy="74" r="4" fill="#0A1628"/>
+              <circle cx="66" cy="72" r="1.5" fill="white"/><circle cx="98" cy="72" r="1.5" fill="white"/>
+              <rect x="58" y="88" width="44" height="16" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="63" y="93" width="6" height="6" rx="1" fill="rgba(255,255,255,0.7)"/>
+              <rect x="73" y="93" width="6" height="6" rx="1" fill="rgba(255,255,255,0.9)"/>
+              <rect x="83" y="93" width="6" height="6" rx="1" fill="rgba(255,255,255,0.7)"/>
+              <rect x="93" y="93" width="6" height="6" rx="1" fill="rgba(255,255,255,0.5)"/>
+              <rect x="77" y="26" width="6" height="22" rx="3" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="80" cy="22" r="8" fill="url(#gai-body)" stroke="rgba(0,212,255,0.7)" stroke-width="2"/>
+              <circle cx="80" cy="22" r="3" fill="rgba(0,212,255,1)"/>
+              <rect x="18" y="62" width="20" height="30" rx="10" fill="url(#gai-body)" opacity="0.7"/>
+              <rect x="122" y="62" width="20" height="30" rx="10" fill="url(#gai-body)" opacity="0.7"/>
+              <rect x="22" y="70" width="12" height="14" rx="6" fill="rgba(0,212,255,0.5)"/>
+              <rect x="126" y="70" width="12" height="14" rx="6" fill="rgba(0,212,255,0.5)"/>
+              <rect x="65" y="116" width="30" height="16" rx="8" fill="url(#gai-body)" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="gai-name">Garoms-AI</div>
+          <div class="gai-status"><span class="gai-dot"></span>Actif en ce moment — répond à vos clients</div>
+          <div class="gai-msgs">
+            <div class="gai-msg-bot">Bonsoir ! Je suis votre assistant. Comment puis-je vous aider ? 😊</div>
+            <div class="gai-msg-usr">C'est quoi vos prix pour un chatbot ?</div>
+            <div class="gai-msg-bot">Excellent choix ! Je vous envoie notre offre personnalisée. Un expert GAROMS-TECH vous rappelle dans 5 min. ✅</div>
+          </div>
+        </div>
+        <div class="gai-float gai-f1"><span>🌙</span>3h du matin — 8 leads capturés</div>
+        <div class="gai-float gai-f2"><span>📈</span>Taux de réponse : 100%</div>
+      </div>
+      <div class="gai-info" data-aos="fade-left">
+        <div class="sbadge" style="background:rgba(0,212,255,.08);color:var(--acc);border-color:rgba(0,212,255,.2);">🤖 Votre assistant IA</div>
+        <h2 class="stitle" style="color:var(--w);">Votre meilleur employé —<br><span style="background:linear-gradient(135deg,var(--p),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">disponible 24h/24</span></h2>
+        <p class="ssub" style="color:rgba(255,255,255,.55);max-width:100%;">Pendant que vous dormez, que vous êtes en réunion ou en vacances — votre agent IA répond à vos clients, qualifie vos prospects et déclenche vos ventes. Automatiquement. Sans interruption.</p>
+        <div class="gai-feats">
+          <div class="gai-feat">
+            <div class="gai-feat-ico" style="background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.2);">💬</div>
+            <div><div class="gai-feat-t">Zéro client perdu la nuit</div><div class="gai-feat-d">Un prospect à 2h du matin ? Il reçoit une réponse immédiate. Vous récupérez la vente.</div></div>
+          </div>
+          <div class="gai-feat">
+            <div class="gai-feat-ico" style="background:rgba(0,212,255,.1);border-color:rgba(0,212,255,.2);">🎯</div>
+            <div><div class="gai-feat-t">Filtre vos leads automatiquement</div><div class="gai-feat-d">Seuls les prospects sérieux arrivent jusqu'à vous. L'IA trie, qualifie et priorise.</div></div>
+          </div>
+          <div class="gai-feat">
+            <div class="gai-feat-ico" style="background:rgba(0,87,255,.12);border-color:rgba(0,87,255,.2);">⚡</div>
+            <div><div class="gai-feat-t">Branché sur vos outils existants</div><div class="gai-feat-d">WhatsApp, Instagram, site web, email — tout centralisé, tout automatisé.</div></div>
+          </div>
+          <div class="gai-feat">
+            <div class="gai-feat-ico" style="background:rgba(255,165,0,.1);border-color:rgba(255,165,0,.2);">💰</div>
+            <div><div class="gai-feat-t">Un coût, un ROI mesurable</div><div class="gai-feat-d">Nos clients récupèrent leur investissement dès le premier mois. Garanti ou remboursé.</div></div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btnp" style="margin-top:1rem;">Je veux mon assistant IA →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TEMOIGNAGES -->
+<section id="temoignages" class="temo">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge" style="background:rgba(0,212,255,.08);color:var(--acc);border-color:rgba(0,212,255,.2);">⭐ Témoignages</div>
+      <h2 class="stitle" style="color:var(--w);">Ce que disent nos clients</h2>
+      <p class="ssub" style="color:rgba(255,255,255,.5);">Des entrepreneurs qui ont transformé leur business avec GAROMS-TECH.</p>
+    </div>
+    <div class="swiper mySwiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="temo-card"><div class="temo-stars">⭐⭐⭐⭐⭐</div><div class="temo-txt">«En 10 jours, GAROMS-TECH a mis en place un chatbot qui répond à nos clients le soir et le week-end. Nous avons augmenté nos réservations de 40% sans embaucher personne. Je recommande à 100%.»</div><div class="temo-author"><div class="temo-av">MC</div><div><div class="temo-n">Marc-Antoine C.</div><div class="temo-s">Gérant — Agence de voyage, Canada</div></div></div><div class="temo-badge">✅ Client vérifié</div></div></div>
+        <div class="swiper-slide"><div class="temo-card"><div class="temo-stars">⭐⭐⭐⭐⭐</div><div class="temo-txt">«Notre équipe perdait 4 heures par jour sur des tâches administratives. Après l'automatisation par GAROMS-TECH, tout tourne en fond. Nos commerciaux se concentrent maintenant uniquement sur la vente.»</div><div class="temo-author"><div class="temo-av">SL</div><div><div class="temo-n">Sandrine L.</div><div class="temo-s">Directrice opérationnelle — PME, France</div></div></div><div class="temo-badge">✅ Client vérifié</div></div></div>
+        <div class="swiper-slide"><div class="temo-card"><div class="temo-stars">⭐⭐⭐⭐⭐</div><div class="temo-txt">«Le site qu'ils m'ont construit est ultra rapide et professionnel. Depuis le lancement, mes leads ont triplé et mon taux de conversion est passé de 2% à 8%. L'investissement s'est rentabilisé en 3 semaines.»</div><div class="temo-author"><div class="temo-av">RD</div><div><div class="temo-n">Romel D.</div><div class="temo-s">Entrepreneur — Coach business</div></div></div><div class="temo-badge">✅ Client vérifié</div></div></div>
+        <div class="swiper-slide"><div class="temo-card"><div class="temo-stars">⭐⭐⭐⭐⭐</div><div class="temo-txt">«L'agent IA que GAROMS-TECH m'a livré gère toutes mes demandes de devis. Il qualifie les clients, répond aux questions et envoie les documents automatiquement. Je gagne 2 jours de travail par semaine.»</div><div class="temo-author"><div class="temo-av">JP</div><div><div class="temo-n">Jean-Philippe M.</div><div class="temo-s">Fondateur — Cabinet de conseil, Belgique</div></div></div><div class="temo-badge">✅ Client vérifié</div></div></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- RÉSULTATS RÉELS -->
+<section class="res-sec">
+  <div class="res-bg">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80" alt="Résultats business" loading="lazy" />
+    <div class="res-overlay"></div>
+  </div>
+  <div class="c res-in">
+    <div class="res-top" data-aos="fade-up">
+      <div class="sbadge" style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.15);">📊 Résultats réels</div>
+      <h2 class="res-h">Des chiffres. Pas des promesses.</h2>
+      <p class="res-sub">Voici ce que nos clients obtiennent — pas des estimations, des résultats réels mesurés après déploiement.</p>
+    </div>
+    <div class="res-cards" data-aos="fade-up" data-aos-delay="100">
+      <div class="res-card">
+        <div class="res-card-n">-4h</div>
+        <div class="res-card-l">par jour gagnées sur les tâches répétitives</div>
+        <div class="res-card-t">Automatisation processus</div>
+      </div>
+      <div class="res-card res-card-hl">
+        <div class="res-card-n">×3</div>
+        <div class="res-card-l">de leads qualifiés en moyenne par mois</div>
+        <div class="res-card-t">Chatbot IA 24/7</div>
+      </div>
+      <div class="res-card">
+        <div class="res-card-n">+95%</div>
+        <div class="res-card-l">de satisfaction client post-déploiement</div>
+        <div class="res-card-t">Tous services confondus</div>
+      </div>
+      <div class="res-card">
+        <div class="res-card-n">30j</div>
+        <div class="res-card-l">pour voir les premiers résultats concrets</div>
+        <div class="res-card-t">Délai moyen</div>
+      </div>
+    </div>
+    <div class="res-cta" data-aos="fade-up">
+      <a href="#contact" class="btn btnp" style="font-size:1rem;padding:1rem 2.5rem;">Je veux ces résultats →</a>
+      <span class="res-guarantee">🛡️ Remboursement intégral si non satisfait sous 30 jours</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge">❓ Questions fréquentes</div>
+      <h2 class="stitle">Vos questions, nos réponses</h2>
+      <p class="ssub">Tout ce que vous devez savoir avant de démarrer avec GAROMS-TECH.</p>
+    </div>
+    <div class="faq-list" data-aos="fade-up">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Combien coûtent vos services ?</div><div class="faq-icon">+</div></div><div class="faq-a">Nos tarifs varient selon la nature et la complexité du projet. Un site vitrine professionnel démarre à partir de 500 USD. Une application mobile à partir de 1 000 USD. Le marketing digital et l'automatisation sont devisés selon vos objectifs. Contactez-nous pour une évaluation gratuite — pas de surprise, tout est transparent.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Combien de temps faut-il pour voir les premiers résultats ?</div><div class="faq-icon">+</div></div><div class="faq-a">Cela dépend du service : un chatbot IA est opérationnel en 3 à 7 jours. Une automatisation simple prend 1 à 2 semaines. Un site vitrine de 1 à 3 semaines. Une application ou un agent IA complexe de 4 à 8 semaines. Dans tous les cas, vous voyez de l'avancement concret dès la première semaine.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Travaillez-vous avec des entreprises hors de la région ?</div><div class="faq-icon">+</div></div><div class="faq-a">Absolument. Nous travaillons 100% en ligne avec des clients en France, au Canada, en Belgique, aux États-Unis et dans d'autres pays. La distance n'est pas un obstacle — tout se passe à distance via appel vidéo, WhatsApp et email.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Qu'est-ce qu'un agent IA exactement ?</div><div class="faq-icon">+</div></div><div class="faq-a">Un agent IA est un assistant virtuel intelligent formé sur les données spécifiques de votre business. Il comprend le contexte, répond à des questions complexes, effectue des actions (réservations, devis, emails) et apprend en continu. C'est comme un employé ultra-compétent disponible 24h/24, sans congé ni fatigue.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Ai-je besoin de connaissances techniques ?</div><div class="faq-icon">+</div></div><div class="faq-a">Non, zéro compétence technique requise. Nous gérons tout de A à Z. Vous nous expliquez votre business et vos objectifs — nous nous occupons du reste. Une formation à l'utilisation est incluse dans chaque livraison.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Que se passe-t-il si je ne suis pas satisfait ?</div><div class="faq-icon">+</div></div><div class="faq-a">Nous offrons une garantie satisfaction sur notre Pack Croissance Complet. Si les résultats ne sont pas au rendez-vous dans les 30 premiers jours, vous êtes remboursé intégralement. Votre succès est notre priorité absolue.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Comment se déroule la collaboration concrètement ?</div><div class="faq-icon">+</div></div><div class="faq-a">1) Appel découverte gratuit (30 min) pour comprendre votre besoin. 2) Analyse et proposition personnalisée. 3) Démarrage du projet avec livrables définis. 4) Points d'avancement réguliers. 5) Livraison avec formation. 6) Support et suivi continu. Vous êtes informé à chaque étape, aucune opacité.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Est-ce que je peux tester avant de m'engager ?</div><div class="faq-icon">+</div></div><div class="faq-a">Oui. Commencez par un appel découverte gratuit de 30 minutes — aucun engagement, aucune obligation. Pour certains projets, nous proposons des pilotes à petite échelle pour que vous constatiez les résultats avant un déploiement complet.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Quelle différence entre automatisation et agent IA ?</div><div class="faq-icon">+</div></div><div class="faq-a">L'automatisation exécute des tâches prédéfinies (ex : envoyer un email quand un formulaire est rempli). L'agent IA comprend le langage naturel, s'adapte au contexte et prend des décisions intelligentes. Les deux se complètent parfaitement et nous les combinons souvent pour un résultat maximal.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><div class="faq-q-t">Mes données sont-elles en sécurité ?</div><div class="faq-icon">+</div></div><div class="faq-a">Oui, totalement. Nous utilisons des infrastructures sécurisées avec chiffrement des données (Supabase, Netlify). Vos informations ne sont jamais partagées avec des tiers. Un accord de confidentialité est disponible sur demande.</div></div>
+    </div>
+    <div class="faq-cta" data-aos="fade-up">
+      <div class="faq-cta-t">Vous ne trouvez pas la réponse à votre question ?</div>
+      <div class="faq-cta-s">Posez-la directement à Garoms-AI (bouton 🤖 en bas à droite) ou contactez notre équipe — nous répondons dans les 24h.</div>
+      <div class="faq-cta-btns">
+        <button class="btn btnp" onclick="toggleChat()">🤖 Demander à Garoms-AI</button>
+        <a href="#contact" class="btn btno">Contacter l'équipe</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER -->
+<div class="nl">
+  <div class="c">
+    <div class="nl-in">
+      <div>
+        <div class="nl-t">Restez à la pointe de l'IA</div>
+        <div class="nl-s">Conseils, cas pratiques et actualités IA — directement dans votre boîte mail.</div>
+      </div>
+      <form class="nl-form" onsubmit="subNL(event)">
+        <input class="nl-inp" type="email" id="nlEmail" placeholder="votre@email.com" required />
+        <button type="submit" class="nl-btn" id="nlBtn">S'abonner →</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="c">
+    <div class="sh cnt" data-aos="fade-up">
+      <div class="sbadge" style="background:rgba(0,212,255,.08);color:var(--acc);border-color:rgba(0,212,255,.2);">📩 Contact</div>
+      <h2 class="stitle" style="color:var(--w);">Parlons de votre projet</h2>
+      <p class="ssub" style="color:rgba(255,255,255,.5);">Réponse garantie sous 24h. Premier échange gratuit et sans engagement.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="cinfo-item"><div class="cinfo-ico">💬</div><div><div class="cinfo-t">WhatsApp — Services & Devis</div><div class="cinfo-v"><a href="https://wa.me/50941773549" target="_blank" rel="noopener">+509 41 77 35 49</a></div></div></div>
+        <div class="cinfo-item"><div class="cinfo-ico">📞</div><div><div class="cinfo-t">Téléphone — Questions & Conseils</div><div class="cinfo-v"><a href="tel:+50943111054">+509 43 11 10 54</a></div></div></div>
+        <div class="cinfo-item"><div class="cinfo-ico">📧</div><div><div class="cinfo-t">Email général & Service</div><div class="cinfo-v"><a href="mailto:infogaromstech@gmail.com">infogaromstech@gmail.com</a></div></div></div>
+        <div class="cinfo-item"><div class="cinfo-ico">📬</div><div><div class="cinfo-t">Email — Retours & Autres</div><div class="cinfo-v"><a href="mailto:toptechnn@gmail.com">toptechnn@gmail.com</a></div></div></div>
+        <div class="free-call-box">
+          <div class="fcb-t">📞 Appel stratégique GRATUIT — 30 minutes</div>
+          <div class="fcb-s">Pas de vente forcée. On analyse votre business ensemble et on vous dit exactement ce que l'IA peut faire pour vous. Aucun engagement.</div>
+          <a href="https://wa.me/50943111054" target="_blank" rel="noopener" class="fcb-link">💬 Écrire sur WhatsApp — C'est gratuit →</a>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="cform">
+          <div class="cf-title">✉️ Envoyez-nous un message</div>
+          <div class="cf-subtitle">Pour un projet, un devis ou une question sur nos services. Réponse sous 24h.</div>
+          <div id="cfOk" class="cf-ok"><div class="cf-ok-ico">🎉</div><div class="cf-ok-t">Message envoyé !</div><div class="cf-ok-s">Nous vous répondons dans les 24 heures. Surveillez votre boîte mail ou WhatsApp.</div></div>
+          <form id="cfForm" onsubmit="sendContact(event)">
+            <div class="cfield-row">
+              <div class="cfield"><label>Prénom *</label><input type="text" id="cfPrenom" placeholder="Jean" required /></div>
+              <div class="cfield"><label>Nom *</label><input type="text" id="cfNom" placeholder="Dupont" required /></div>
+            </div>
+            <div class="cfield"><label>Email *</label><input type="email" id="cfEmail" placeholder="jean@email.com" required /></div>
+            <div class="cfield"><label>WhatsApp / Téléphone</label><input type="tel" id="cfTel" placeholder="+1 555 000 0000" /></div>
+            <div class="cfield"><label>Service souhaité *</label>
+              <select id="cfService" required>
+                <option value="">Choisir un service...</option>
+                <option>Chatbot IA 24/7</option>
+                <option>Automatisation de processus</option>
+                <option>Site Web & Application</option>
+                <option>Marketing Digital & Publicité</option>
+                <option>Agent IA Personnalisé</option>
+                <option>Pack Croissance Complet</option>
+                <option>Je ne sais pas encore — conseiller moi</option>
+              </select>
+            </div>
+            <div class="cfield"><label>Votre message *</label><textarea id="cfMsg" placeholder="Décrivez votre projet, vos besoins, vos questions..." required></textarea></div>
+            <div class="csecure"><span class="csecure-ico">🔒</span> Vos données sont sécurisées et ne seront jamais partagées avec des tiers.</div>
+            <div class="cform-btns">
+              <button type="submit" class="btn btnp csend" id="cfSubmit">📧 Envoyer par email →</button>
+              <a href="javascript:void(0)" class="btn btnwp csend" onclick="sendContactWA()">💬 Envoyer via WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECOND FORM -->
+<section class="form2">
+  <div class="c" style="padding-top:5rem;padding-bottom:5rem;">
+    <div class="form2-inner">
+      <div class="form2-info" data-aos="fade-right">
+        <div class="form2-badge">💡 Idées & Questions</div>
+        <h2 class="form2-t">Une idée ? Une vision pour l'avenir ?</h2>
+        <p class="form2-s">Pas encore prêt pour un projet ? Vous avez une idée, une suggestion, une question sur l'IA ou l'avenir du digital ? Partagez-la — nous lisons tout.</p>
+        <div class="form2-contact">📞 <a href="tel:+50943111054">+509 43 11 10 54</a> &nbsp;|&nbsp; <a href="mailto:toptechnn@gmail.com">toptechnn@gmail.com</a></div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="form2-box">
+          <div id="f2Ok" class="form2-ok" style="display:none;"><div style="font-size:2.5rem;margin-bottom:.5rem;">💡</div><div style="font-family:var(--fh);font-weight:700;color:var(--w);margin-bottom:.25rem;">Message reçu !</div><div style="font-size:.85rem;color:rgba(255,255,255,.5);">Merci pour votre idée. On vous lit avec attention.</div></div>
+          <form id="f2Form" onsubmit="sendForm2(event)">
+            <div class="cf-title" style="margin-bottom:1.25rem;">💡 Partagez votre idée</div>
+            <div class="cfield"><label>Prénom</label><input type="text" id="f2Prenom" placeholder="Votre prénom" /></div>
+            <div class="cfield"><label>Email *</label><input type="email" id="f2Email" placeholder="votre@email.com" required /></div>
+            <div class="cfield"><label>Votre idée ou question *</label><textarea id="f2Msg" placeholder="Une idée pour l'IA, une vision, une question sur l'avenir du digital..." style="min-height:110px;" required></textarea></div>
+            <div class="csecure"><span class="csecure-ico">🔒</span> Confidentiel — jamais partagé.</div>
+            <button type="submit" class="btn btnp" style="width:100%;justify-content:center;margin-top:.25rem;" id="f2Btn">Envoyer mon idée →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER -->
+<div class="nl">
+  <div class="c">
+    <div class="nl-in">
+      <div>
+        <div class="nl-t">Restez à la pointe de l'IA</div>
+        <div class="nl-s">Conseils, cas pratiques et actualités IA — directement dans votre boîte mail.</div>
+      </div>
+      <form class="nl-form" onsubmit="subNL2(event)">
+        <input class="nl-inp" type="email" id="nlEmail2" placeholder="votre@email.com" required />
+        <button type="submit" class="nl-btn" id="nlBtn2">S'abonner →</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="c">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="ft-logo">
+          <img src="https://raw.githubusercontent.com/toptechnn-debug/garoms-tech-site/main/assets/images/7d4ed174-9e05-4c62-8e9d-476dfb21229e.png" alt="GAROMS-TECH" />
+          <span class="ft-logo-t">GAROMS<span>-TECH</span></span>
+        </div>
+        <div class="ft-desc">IA & Automatisation pour entrepreneurs ambitieux. Systèmes intelligents qui travaillent pour vous. Fondée en 2023 — Service mondial.</div>
+        <a href="https://wa.me/50941773549" target="_blank" rel="noopener" class="ft-wa">💬 WhatsApp : +509 41 77 35 49</a>
+      </div>
+      <div>
+        <div class="ft-col-t">Services</div>
+        <div class="ft-links">
+          <a href="#services">Chatbot IA 24/7</a>
+          <a href="#services">Automatisation</a>
+          <a href="#services">Sites Web & Apps</a>
+          <a href="#services">Marketing Digital</a>
+          <a href="#services">Agent IA Personnalisé</a>
+          <a href="#services">Pack Croissance</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-t">Entreprise</div>
+        <div class="ft-links">
+          <a href="#apropos">À Propos</a>
+          <a href="#equipe">Notre équipe</a>
+          <a href="#temoignages">Témoignages</a>
+          <a href="#faq">FAQ</a>
+          <a href="ambassadeur.html">Programme Ambassadeur</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-t">Contact direct</div>
+        <div class="ft-links">
+          <a href="https://wa.me/50941773549" target="_blank" rel="noopener">💬 WhatsApp Services</a>
+          <a href="tel:+50941773549">📞 +509 41 77 35 49</a>
+          <a href="tel:+50943111054">📞 +509 43 11 10 54</a>
+          <a href="mailto:infogaromstech@gmail.com">📧 infogaromstech@gmail.com</a>
+          <a href="mailto:toptechnn@gmail.com">📧 toptechnn@gmail.com</a>
+        </div>
+        <div class="ft-col-t" style="margin-top:1.5rem;">Informations légales</div>
+        <div class="ft-links">
+          <a href="politique.html">🔒 Politique de confidentialité</a>
+          <a href="cgu.html">📋 Conditions générales d'utilisation</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <div class="ft-copy">© 2023–2026 GAROMS-TECH. Tous droits réservés.</div>
+      <div class="ft-legal">
+        <a href="politique.html">🔒 Confidentialité</a>
+        <a href="cgu.html">📋 CGU</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div><!-- /#site -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const SB_URL='https://gqceogxyxbublncaialc.supabase.co';
+const SB_KEY='sb_publishable_7nOx0eLRAT9X8YYFURDSXg_sMbZ3-PR';
+async function sbPost(table,data){
+  try{
+    const r=await fetch(`${SB_URL}/rest/v1/${table}`,{method:'POST',headers:{'Content-Type':'application/json','apikey':SB_KEY,'Authorization':`Bearer ${SB_KEY}`,'Prefer':'return=minimal'},body:JSON.stringify(data)});
+    return r.ok;
+  }catch(e){return false;}
+}
+const CFG={dur:3200,pKey:'gt_p_v3',vKey:'gt_v3'};
+const S={done:false,t0:Date.now(),ti:null};
+function initLoad(){
+  const ll=document.getElementById('ll'),lt=document.getElementById('ltag'),lf=document.getElementById('lpf'),lc=document.getElementById('lpc');
+  if(!ll||typeof gsap==='undefined'){finish();return;}
+  if(localStorage.getItem(CFG.vKey)&&lt)lt.textContent='Bon retour chez GAROMS-TECH !';
+  localStorage.setItem(CFG.vKey,'1');
+  gsap.timeline({defaults:{ease:'power3.out'}})
+    .to(ll,{opacity:1,y:0,duration:.9,delay:.1})
+    .to(lt,{opacity:1,duration:.6},'-=.35')
+    .to('#ls .lpbar',{opacity:1,duration:.4},'-=.2')
+    .to(lc,{opacity:1,duration:.35},'-=.15')
+    .to('#ls .lskip',{opacity:1,duration:.4},'-=.15');
+  S.ti=setInterval(()=>{
+    const p=Math.min(100,Math.round(((Date.now()-S.t0)/CFG.dur)*100));
+    if(lf)lf.style.width=p+'%';
+    if(lc)lc.textContent=p+'%';
+    if(p>=100){clearInterval(S.ti);setTimeout(finish,180);}
+  },40);
+}
+function skip(){const lf=document.getElementById('lpf'),lc=document.getElementById('lpc');if(lf)lf.style.width='100%';if(lc)lc.textContent='100%';setTimeout(finish,280);}
+function finish(){
+  if(S.done)return;S.done=true;clearInterval(S.ti);
+  const sc=document.getElementById('ls'),si=document.getElementById('site');
+  if(typeof gsap!=='undefined'&&sc)gsap.to(sc,{opacity:0,duration:.6,onComplete:()=>reveal(sc,si)});
+  else{if(sc)sc.style.display='none';reveal(null,si);}
+}
+function reveal(sc,si){
+  if(sc)sc.style.display='none';
+  if(si){si.style.display='block';si.style.opacity='0';
+    if(typeof gsap!=='undefined')gsap.to(si,{opacity:1,duration:.5});else si.style.opacity='1';
+    if(typeof AOS!=='undefined')AOS.init({once:true,duration:750,easing:'ease-out-cubic',offset:80});}
+  if(typeof Swiper!=='undefined')new Swiper('.mySwiper',{slidesPerView:1,spaceBetween:24,pagination:{el:'.swiper-pagination',clickable:true},breakpoints:{768:{slidesPerView:2},1024:{slidesPerView:3}},autoplay:{delay:5000,disableOnInteraction:false},loop:true});
+  initHeader();initHero();initScroll();initStats();
+  setTimeout(showFloat,2500);
+  setTimeout(showToast,5000);
+}
+function initHeader(){
+  const h=document.getElementById('hdr');
+  if(h)window.addEventListener('scroll',()=>h.classList.toggle('on',window.scrollY>10),{passive:true});
+}
+function toggleMenu(){
+  const m=document.getElementById('mmenu'),b=document.getElementById('hmb');
+  if(!m||!b)return;
+  const o=m.classList.toggle('o');b.classList.toggle('o',o);document.body.style.overflow=o?'hidden':'';
+}
+function closeMenu(){
+  const m=document.getElementById('mmenu'),b=document.getElementById('hmb');
+  if(m)m.classList.remove('o');if(b)b.classList.remove('o');document.body.style.overflow='';
+}
+document.addEventListener('click',e=>{
+  const m=document.getElementById('mmenu'),b=document.getElementById('hmb');
+  if(m&&b&&m.classList.contains('o')&&!m.contains(e.target)&&!b.contains(e.target))closeMenu();
+});
+function initStats(){
+  const items=document.querySelectorAll('.stat-n[data-count]');
+  if(!items.length)return;
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){
+        const el=en.target,end=+el.dataset.count,suf=el.textContent.replace(/[0-9]/g,'');
+        let start=0;const dur=1800,step=Math.ceil(end/60);
+        const t=setInterval(()=>{start=Math.min(start+step,end);el.textContent=start+suf;if(start>=end)clearInterval(t);},dur/60);
+        io.unobserve(el);
+      }
+    });
+  },{threshold:.3});
+  items.forEach(el=>io.observe(el));
+}
+function initHero(){
+  const canvas=document.getElementById('hcanvas');
+  if(!canvas)return;
+  const cv=document.createElement('canvas');canvas.appendChild(cv);
+  cv.style.cssText='position:absolute;inset:0;width:100%;height:100%;pointer-events:none;';
+  const ctx=cv.getContext('2d');let W,H,pts=[];
+  function resize(){W=cv.width=canvas.offsetWidth;H=cv.height=canvas.offsetHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  for(let i=0;i<40;i++)pts.push({x:Math.random()*2000,y:Math.random()*900,r:Math.random()*.8+.2,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.2,o:Math.random()*.35+.05});
+  (function draw(){ctx.clearRect(0,0,W,H);pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,212,255,${p.o})`;ctx.fill();});requestAnimationFrame(draw);})();
+  if(typeof gsap!=='undefined'){
+    const h1=document.getElementById('hh1');
+    if(h1)gsap.fromTo(h1,{opacity:0,y:50},{opacity:1,y:0,duration:1.1,ease:'power3.out',delay:.3});
+    gsap.to('.hero-screen',{y:-14,duration:3.5,ease:'sine.inOut',yoyo:true,repeat:-1});
+  }
+}
+function initScroll(){
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const id=a.getAttribute('href');if(id==='#')return;
+      const t=document.querySelector(id);if(!t)return;
+      e.preventDefault();
+      const off=document.getElementById('hdr')?.offsetHeight||72;
+      window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-off-16,behavior:'smooth'});
+    });
+  });
+}
+function showFloat(){
+  const b=document.getElementById('cfBubble');
+  if(b){b.classList.add('show');setTimeout(()=>b.classList.remove('show'),7000);}
+}
+let chatOpen=false;
+const chatHistory=[];
+function toggleChat(){
+  const p=document.getElementById('cfPanel'),b=document.getElementById('cfBubble');
+  chatOpen=!chatOpen;
+  if(p)p.classList.toggle('open',chatOpen);
+  if(b)b.classList.remove('show');
+  if(chatOpen){const i=document.getElementById('cfInput');setTimeout(()=>i?.focus(),100);}
+}
+async function sendAI(){
+  const inp=document.getElementById('cfInput'),msgs=document.getElementById('cfMsgs'),typ=document.getElementById('cfTyping');
+  if(!inp||!msgs||!inp.value.trim())return;
+  const txt=inp.value.trim();inp.value='';
+  const um=document.createElement('div');um.className='msg usr';um.textContent=txt;msgs.appendChild(um);
+  msgs.scrollTop=msgs.scrollHeight;
+  chatHistory.push({role:'user',content:txt});
+  if(typ){typ.style.display='flex';msgs.appendChild(typ);msgs.scrollTop=msgs.scrollHeight;}
+  try{
+    const res=await fetch('/.netlify/functions/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:txt,history:chatHistory.slice(-8)})});
+    const data=await res.json();
+    if(typ)typ.style.display='none';
+    const reply=data.reply||'Je suis là pour vous aider ! Contactez-nous sur WhatsApp : +509 41 77 35 49';
+    chatHistory.push({role:'assistant',content:reply});
+    const bm=document.createElement('div');bm.className='msg bot';bm.textContent=reply;msgs.appendChild(bm);
+  }catch(e){
+    if(typ)typ.style.display='none';
+    const bm=document.createElement('div');bm.className='msg bot';bm.textContent='Une erreur est survenue. Contactez-nous sur WhatsApp : +509 41 77 35 49';msgs.appendChild(bm);
+  }
+  msgs.scrollTop=msgs.scrollHeight;
+}
+function toggleFaq(el){
+  const item=el.closest('.faq-item');
+  const wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen)item.classList.add('open');
+}
+async function subNL(e){
+  e.preventDefault();
+  const email=document.getElementById('nlEmail')?.value.trim();
+  const btn=document.getElementById('nlBtn');
+  if(!email)return;
+  if(btn){btn.textContent='Envoi...';btn.disabled=true;}
+  try{
+    const ok=await sbPost('newsletter',{email,source:'site_footer',created_at:new Date().toISOString()});
+    if(ok){
+      if(btn)btn.textContent='✅ Abonné !';
+      if(document.getElementById('nlEmail'))document.getElementById('nlEmail').value='';
+    }else{
+      // Fallback: open email client
+      window.open(`mailto:infogaromstech@gmail.com?subject=Abonnement newsletter&body=Bonjour, je souhaite m'abonner à votre newsletter. Mon email : ${email}`);
+      if(btn)btn.textContent='✅ Email ouvert !';
+    }
+  }catch(err){
+    window.open(`mailto:infogaromstech@gmail.com?subject=Abonnement newsletter&body=Bonjour, je souhaite m'abonner à votre newsletter. Mon email : ${email}`);
+    if(btn)btn.textContent='✅ Email ouvert !';
+  }
+  setTimeout(()=>{if(btn){btn.textContent="S'abonner →";btn.disabled=false;}},4000);
+}
+async function sendContact(e){
+  e.preventDefault();
+  const btn=document.getElementById('cfSubmit');
+  if(btn){btn.textContent='Envoi en cours...';btn.disabled=true;}
+  const data={
+    prenom:document.getElementById('cfPrenom')?.value.trim(),
+    nom:document.getElementById('cfNom')?.value.trim(),
+    email:document.getElementById('cfEmail')?.value.trim(),
+    telephone:document.getElementById('cfTel')?.value.trim(),
+    service:document.getElementById('cfService')?.value,
+    message:document.getElementById('cfMsg')?.value.trim(),
+    created_at:new Date().toISOString()
+  };
+  const ok=await sbPost('contacts',data);
+  if(ok){
+    document.getElementById('cfForm').style.display='none';
+    document.getElementById('cfOk').style.display='block';
+  }else{
+    if(btn){btn.textContent='❌ Erreur, réessayez';btn.disabled=false;}
+    // Fallback via email
+    const body=encodeURIComponent(`Prénom: ${data.prenom} ${data.nom}\nEmail: ${data.email}\nTél: ${data.telephone}\nService: ${data.service}\n\nMessage:\n${data.message}`);
+    window.open(`mailto:infogaromstech@gmail.com?subject=Nouveau message via site&body=${body}`);
+  }
+}
+function sendContactWA(){
+  const prenom=document.getElementById('cfPrenom')?.value.trim()||'';
+  const nom=document.getElementById('cfNom')?.value.trim()||'';
+  const service=document.getElementById('cfService')?.value||'';
+  const msg=document.getElementById('cfMsg')?.value.trim()||'';
+  if(!msg){alert('Veuillez remplir votre message avant d\'envoyer via WhatsApp.');return;}
+  const text=encodeURIComponent(`Bonjour GAROMS-TECH !\n\nJe m'appelle ${prenom} ${nom}.\nService souhait\u00e9 : ${service}\n\nMon message :\n${msg}`);
+  window.open(`https://wa.me/50941773549?text=${text}`,'_blank');
+}
+async function sendForm2(e){
+  e.preventDefault();
+  const btn=document.getElementById('f2Btn');
+  if(btn){btn.textContent='Envoi...';btn.disabled=true;}
+  const data={
+    prenom:document.getElementById('f2Prenom')?.value.trim(),
+    email:document.getElementById('f2Email')?.value.trim(),
+    message:document.getElementById('f2Msg')?.value.trim(),
+    type:'idee_question',
+    created_at:new Date().toISOString()
+  };
+  const ok=await sbPost('contacts',data);
+  if(ok){
+    document.getElementById('f2Form').style.display='none';
+    document.getElementById('f2Ok').style.display='block';
+  }else{
+    const body=encodeURIComponent(`Idée / Question de: ${data.prenom}\nEmail: ${data.email}\n\n${data.message}`);
+    window.open(`mailto:toptechnn@gmail.com?subject=Idée reçue via site&body=${body}`);
+    if(btn){btn.textContent='✅ Envoyé !';}
+  }
+  if(btn)setTimeout(()=>{btn.textContent='Envoyer mon idée →';btn.disabled=false;},4000);
+}
+function showToast(){
+  const t=document.getElementById('toast');
+  if(!t)return;
+  const s=localStorage.getItem(CFG.pKey);
+  if(s==='ok')return;
+  if(s&&!isNaN(+s)&&Date.now()<+s)return;
+  t.style.display='block';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>t.classList.add('on')));
+}
+function claimP(){localStorage.setItem(CFG.pKey,'ok');closeP();document.getElementById('contact')?.scrollIntoView({behavior:'smooth'});}
+function laterP(){localStorage.setItem(CFG.pKey,(Date.now()+120000).toString());closeP();setTimeout(showToast,120000);}
+function closeP(){const t=document.getElementById('toast');if(!t)return;t.classList.remove('on');setTimeout(()=>t.style.display='none',550);}
+const demoR=['Je comprends votre demande. Précisez vos préférences pour que je trouve la meilleure option.','Bien sûr ! Je vérifie les disponibilités en temps réel...','Nous avons plusieurs options correspondantes. Laquelle vous convient ?','Parfait, je procède à la confirmation. Email envoyé dans quelques secondes !'];
+let dri=0;
+function sendDemo(){
+  const inp=document.getElementById('demoInput'),body=document.getElementById('chatDemo');
+  if(!inp||!body||!inp.value.trim())return;
+  const txt=inp.value.trim();inp.value='';
+  const um=document.createElement('div');um.className='msg usr';um.textContent=txt;body.appendChild(um);
+  body.scrollTop=body.scrollHeight;
+  setTimeout(()=>{const bm=document.createElement('div');bm.className='msg bot';bm.textContent=demoR[dri%demoR.length];dri++;body.appendChild(bm);body.scrollTop=body.scrollHeight;},900);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  initLoad();
+  window.skip=skip;window.toggleMenu=toggleMenu;window.closeMenu=closeMenu;
+  window.toggleChat=toggleChat;window.sendAI=sendAI;window.sendDemo=sendDemo;
+  window.toggleFaq=toggleFaq;window.subNL=subNL;window.sendContact=sendContact;
+  window.sendContactWA=sendContactWA;window.sendForm2=sendForm2;
+  window.claimP=claimP;window.laterP=laterP;window.closeP=closeP;
+});
+</script>
+<script>
+// ===== SCRIPT SEKOU — GAROMS-TECH =====
+// Si JavaScript principal plante, ce script montre quand même le site
+(function(){
+  // Failsafe: après 5 secondes, forcer l'affichage du site
+  setTimeout(function(){
+    var site=document.getElementById('site');
+    var ls=document.getElementById('ls');
+    if(site&&(site.style.display==='none'||site.style.display==='')){
+      site.style.opacity='0';
+      site.style.display='block';
+      var t=0;
+      var fade=setInterval(function(){
+        t+=0.05;
+        site.style.opacity=String(Math.min(t,1));
+        if(t>=1)clearInterval(fade);
+      },30);
+      if(ls){ls.style.opacity='0';setTimeout(function(){ls.style.display='none';},600);}
+    }
+  },5000);
+  // Définir skip() si pas défini (JS principal cassé)
+  if(typeof window.skip==='undefined'){
+    window.skip=function(){
+      var site=document.getElementById('site');
+      var ls=document.getElementById('ls');
+      if(site){site.style.display='block';site.style.opacity='1';}
+      if(ls){ls.style.display='none';}
+    };
+  }
+  // Définir sendContactWA() si pas défini
+  if(typeof window.sendContactWA==='undefined'){
+    window.sendContactWA=function(){
+      var p=(document.getElementById('cfPrenom')||{}).value||'';
+      var n=(document.getElementById('cfNom')||{}).value||'';
+      var s=(document.getElementById('cfService')||{}).value||'';
+      var m=(document.getElementById('cfMsg')||{}).value||'';
+      var msg=encodeURIComponent('Bonjour GAROMS-TECH !\n\nNom : '+p+' '+n+'\nService : '+s+'\nMessage : '+m);
+      window.open('https://wa.me/50941773549?text='+msg,'_blank');
+    };
+  }
+  // Définir toggleChat() si pas défini
+  if(typeof window.toggleChat==='undefined'){
+    window.toggleChat=function(){
+      var p=document.getElementById('cfPanel');
+      if(p)p.classList.toggle('open');
+    };
+  }
+  // Définir toggleMenu() si pas défini
+  if(typeof window.toggleMenu==='undefined'){
+    window.toggleMenu=function(){
+      var m=document.getElementById('mmenu');
+      var b=document.getElementById('hmb');
+      if(m)m.classList.toggle('o');
+      if(b)b.classList.toggle('o');
+    };
+  }
+  // Définir closeMenu() si pas défini
+  if(typeof window.closeMenu==='undefined'){
+    window.closeMenu=function(){
+      var m=document.getElementById('mmenu');
+      var b=document.getElementById('hmb');
+      if(m)m.classList.remove('o');
+      if(b)b.classList.remove('o');
+    };
+  }
+  // Définir subNL2 si pas défini
+  if(typeof window.subNL2==='undefined'){
+    window.subNL2=function(e){
+      if(e)e.preventDefault();
+      if(typeof window.subNL==='function'){
+        var fake={preventDefault:function(){},target:{querySelector:function(){return document.getElementById('nlEmail2');}}};
+        var v=document.getElementById('nlEmail2');
+        if(v&&typeof window.subNL==='function'){window.subNL(e);}
+      }
+    };
+  }
+})();
+</script>
+</body>
+</html>
